@@ -1,0 +1,17 @@
+.frm-search {
+  background-color: var(--color-grey-lighter);
+  margin: 1rem 0 1rem auto;
+}
+.frm-search * {
+  border: none;
+}
+.frm-search input {
+  background-color: inherit;
+  padding: 0 1rem;
+}
+.frm-search button {
+  background-color: var(--category-blue);
+  color: var(--color-white);
+  font-size: 1rem;
+  padding: 1rem;
+}

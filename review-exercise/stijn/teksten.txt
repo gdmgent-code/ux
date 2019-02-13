@@ -1,0 +1,52 @@
+Search 
+
+Start page
+Blog articles
+About me
+My projects
+Contact me 
+Buy products
+
+--------
+
+Januari 20, 2019 
+Getting better at CSS - CSS 
+The Google corporate identity - DESIGN 
+
+Why wireframes matter 
+Sketch on the rise 
+Building a framework 
+
+--------
+
+12 hours ago - HOT
+
+Cupcakes for better HTML code
+
+Jelly muffin candy canes chocolate croissant tootsie roll carrot cake caramels sesame snaps. Pastry dessert cake ice cream chocolate tiramisu jelly beans. Liquorice gummies bear claw. Sweet cookie cupcake apple pie soufflé cheesecake bonbon cupcake. Biscuit muffin halvah toffee cookie dessert tootsie roll tiramisu.
+
+Read More - 7 responses - 1221
+
+
+January 16, 2019
+
+State of the Art JavaScript in 2019
+
+Class in JS is not harmless sugar for prototypal OO. Class is a virus that infects everything it touches. It came to us formally in JavaScript with ES6, and at the same time, React was taking off. Lots of people started using classes for React components...
+
+Read More - 7 responses - 1221
+
+--------
+
+Sheldon Cooper
+Front-End Developer Artevelde University College
+Categories
+CSS
+Design
+Innovation
+Personal
+Other
+
+--------
+
+Examen WebtechI STDV | www.gdm.gent

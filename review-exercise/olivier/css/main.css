@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Merriweather:300,400,700,900');
+
+@import url('variables.css');
+
+@import url('grid.css');
+@import url('components/buttons.css');
+@import url('components/cards.css');
+@import url('components/forms.css');
+
+/*-- GENERAL --*/
+body {
+  background-color: var(--color-grey-lightest);
+  box-sizing: border-box;
+  font-family: var(--font-body);
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+/*-- PAGE HEADER --*/
+.page-header,
+.page-footer {
+  background-color: var(--color-white);
+}
+.page-header .container {
+  align-content: center;
+  background-color: var(--color-white);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*-- NAVIGATION --*/
+.nav-main {
+  border-top: 1px solid var(--color-grey-lighter);
+
+  width: 100%;
+}
+.nav-main ul {
+  display: flex;
+  font-family: var(--font-heading);
+  list-style: none;
+  padding: .5rem 0;
+  text-decoration: none;
+}
+.nav-main li + li {
+  padding-left: 2.5rem;
+}
+.nav-main li:last-of-type {
+  margin-left: auto;
+}
+.nav-main a {
+  color:var(--color-grey-light);
+  display: block;
+  text-decoration: none;
+}
+.nav-main a:hover {
+  color: inherit;
+}
+
+/*-- BANNER POSTS --*/
+.banner-posts {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+}
+.banner-posts article {
+  box-sizing: border-box;
+  width: calc(100% / var(--cols));
+}
+.banner-posts article:nth-of-type(1),
+.banner-posts article:nth-of-type(2) {
+  width: 50%;
+}
+.banner-posts a {
+  background-color: var(--color-white);
+  padding: .375rem;
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+.banner-posts img {
+  width: 100%;
+}
+.banner-posts h2,
+.banner-posts h3 {
+  color: var(--color-white);
+  padding: 1rem;
+  position: absolute;
+}
+.banner-posts h2 {
+  background: linear-gradient(to right, var(--category-red), var(--category-green));
+  font-weight: 900;
+}
+.banner-posts h3 {
+  background: var(--category-green);
+  text-transform: uppercase;
+}
+
+/*-- MAIN HOST --*/
+.host {
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+  text-align: center;
+  color: var(--color-grey-light);
+}
+.host h2 {
+  color: var(--color-black);
+  margin: 0;
+}
+.host img {
+  border-radius: 50%;
+  width: 50%;
+  margin: calc(var(--unit) * 2);
+}
+.host a {
+  color: inherit;
+  padding: 3px;
+}
+.host a:hover {
+  color: var(--color-black);
+}
+
+/*-- MAIN CATEGORIES --*/
+
+/*-- PAGE FOOTER --*/
+.page-footer {
+  color: var(--color-grey-dark);
+  padding: 1rem var(--unit);
+}

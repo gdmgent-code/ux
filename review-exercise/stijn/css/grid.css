@@ -1,0 +1,41 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.breedte__12, .breedte__11, .breedte__10, .breedte__9, .breedte__8, .breedte__7, .breedte__6, .breedte__5, .breedte__4, .breedte__3, .breedte__2{
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.breedte__12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.breedte__11{
+}
+.breedte__10{
+}
+.breedte__9{
+}
+.breedte__8{
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+.breedte__7{
+}
+.breedte__6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.breedte__5{
+}
+.breedte__4{
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+.breedte__3{
+}
+.breedte__2{
+}
+.breedte__1{
+}

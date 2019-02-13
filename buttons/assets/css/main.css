@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css');
+
+:root {
+    --c-bg-main: #f4f4f4;
+    --f-head: "Alegreya Sans", sans-serif;
+    --f-body: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--c-bg-main);
+}
+
+h1 {
+    font-family: var(--f-head);
+}
+
+.example {
+}
+.worse {
+    color: red;
+}
+
+.better {
+    color: forestgreen;
+}

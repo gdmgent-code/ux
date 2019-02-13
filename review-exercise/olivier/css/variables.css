@@ -1,0 +1,18 @@
+:root {
+  --category-blue: hsl(197, 81%, 57%);
+  --category-green: hsl(174, 45%, 61%);
+  --category-red: hsl(0, 100%, 73%);
+  --category-yellow: hsl(41, 100%, 66%);
+
+  --color-black: #000;
+  --color-grey-dark: hsl(0, 0%, 46%);
+  --color-grey-light: hsl(0, 0%, 66%);
+  --color-grey-lighter: hsl(0, 0%, 92%);
+  --color-grey-lightest: hsl(0, 0%, 96%);
+  --color-white: #FFF;
+
+  --cols: 3;
+  --font-body: Merriweather;
+  --font-heading: Lato;
+  --unit: 1.25rem;
+}
