@@ -11,126 +11,162 @@
     <!-- PAGE HEADER -->
     <header class="page-header">
         <div class="container">
-            <h1 class="logo">
-                <a href="#">
-                    <img src="images/logo.png" alt="WBTCHROCK">
-                </a>
-            </h1>
-            <form class="frm-search" action="" method="get">
-                <input type="text" name="search" placeholder="Search&hellip;" value="">
-                <button type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
-            <nav class="nav-main">
-                <ul>
-                    <li>Home</li>
-                    <li><a href="#">Blog articles</a></li>
-                    <li><a href="#">About WBTCH</a></li>
-                    <li><a href="#">Festivalitis</a></li>
-                    <li><a href="#">How to get there</a></li>
-                    <li><a href="#"><i class="fas fa-shopping-cart"></i> Buy tickets</a></li>
-                </ul>
-            </nav>
+            <div class="row">
+                <div class="col">
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="WBTCHROCK">
+                        </a>
+                    </h1>
+                    <form class="frm-search color-blue" action="" method="get">
+                        <input type="text" name="search" placeholder="Search&hellip;" value="">
+                        <button type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <nav class="nav-main color-red">
+                        <ul>
+                            <li>Home</li>
+                            <li><a href="#">Blog articles</a></li>
+                            <li><a href="#">About WBTCH</a></li>
+                            <li><a href="#">Festivalitis</a></li>
+                            <li><a href="#">How to get there</a></li>
+                            <li><a href="#"><i class="fas fa-shopping-cart"></i> Buy tickets</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </header>
     <!-- / PAGE HEADER -->
     
     <!-- BANNER POSTS -->
     <section class="banner-posts container">
-        <article>
-            <a class="card" href="#" title="Angèle">
-                <h2>Angèle</h2>
-                <h3>Best Newcomer</h3>
-                <img src="images/v2-angele.jpg" alt="Angèle">
-            </a>
-        </article>
-        <article>
-            <a class="card" href="#" title="Bastille">
-                <h2>Bastille</h2>
-                <h3>Best Live Act</h3>
-                <img src="images/v2-bastille.jpg" alt="Bastille">
-            </a>
-        </article>
-        <article>
-            <a class="card" href="#" title="Brockhampton">
-                <h2>Brockhampton</h2>
-                <img src="images/v2-brock.jpg" alt="Brockhampton">
-            </a>
-        </article>
-        <article>
-            <a class="card" href="#" title="Florence &amp; The Machine">
-                <h2>Florence &amp; The Machine</h2>
-                <img src="images/v2-florence.jpg" alt="Florence &amp; The Machine">
-            </a>
-        </article>
-        <article>
-            <a class="card" href="#" title="Janelle">
-                <h2>Janelle</h2>
-                <img src="images/v2-janelle.jpg" alt="Janelle">
-            </a>
-        </article>
+        <div class="row">
+            <article class="col col-6">
+                <a class="card" href="#" title="Angèle">
+                    <header>
+                        <h2>Angèle</h2>
+                        <h3>Best Newcomer</h3>
+                    </header>
+                    <img src="images/v2-angele.jpg" alt="Angèle">
+                </a>
+            </article>
+            <article class="col col-6">
+                <a class="card" href="#" title="Bastille">
+                    <header>
+                        <h2>Bastille</h2>
+                        <h3>Best Live Act</h3>
+                    </header>
+                    <img src="images/v2-bastille.jpg" alt="Bastille">
+                </a>
+            </article>
+        </div>
+        <div class="row">
+            <article class="col col-4">
+                <a class="card" href="#" title="Brockhampton">
+                    <header>
+                        <h2>Brockhampton</h2>
+                    </header>
+                    <img src="images/v2-brock.jpg" alt="Brockhampton">
+                </a>
+            </article>
+            <article class="col col-4">
+                <a class="card" href="#" title="Florence &amp; The Machine">
+                    <header>
+                        <h2>Florence &amp; The Machine</h2>
+                    </header>
+                    <img src="images/v2-florence.jpg" alt="Florence &amp; The Machine">
+                </a>
+            </article>
+            <article class="col col-4">
+                <a class="card" href="#" title="Janelle">
+                    <header>
+                        <h2>Janelle</h2>
+                    </header>
+                    <img src="images/v2-janelle.jpg" alt="Janelle">
+                </a>
+            </article>
+        </div>
     </section>
     <!-- / BANNER POSTS -->
-    
-    <!-- MAIN -->
+
     <main class="container">
         <div class="row">
-            <div class="col col-1-3">
-                <aside class="card host">
+            <aside class="col col-4">
+                <div class="card host">
                     <img src="images/v2-snoop.jpg" alt="Snoop Dawg">
                     <h2>Snoop Dawg</h2>
                     <p>Your Host of the evening</p>
-                    <div class="social-media">
-                        <a href="#" title="Twitter"><i class="fab fa-2x fa-twitter "></i></a>
+                    <nav class="social-media">
+                        <a href="#" title="Twitter"><i class="fab fa-2x fa-twitter"></i></a>
                         <a href="#" title="LinkedIn"><i class="fab fa-2x fa-linkedin"></i></a>
-                    </div>
+                    </nav>
                 </div>
-                <aside class="card categories">
+                <nav class="card categories">
                     <h2>Categories</h2>
                     <ul>
-                        <li><a href="#">Hip Hop</a></li>
-                        <li><a href="#">Urban</a></li>
-                        <li><a href="#">Alternative</a></li>
-                        <li><a href="#">Rock</a></li>
+                        <li><a href="#" class="color-blue">Hip Hop</a></li>
+                        <li><a href="#" class="color-red">Urban</a></li>
+                        <li><a href="#" class="color-yellow">Alternative</a></li>
+                        <li><a href="#" class="color-green">Rock</a></li>
                         <li><a href="#">Other</a></li>
                     </ul>
-                </div>
-            </div>
-            <div class="col col-2-3">
-                <article class="card card-blue">
+                </nav>
+            </aside>
+            <div class="col col-8 articles">
+                <article class="card color-blue">
                     <header>
-                        <time date="2019-01-16">January 16, 2019</time>
-                        <span class="badge">HOT</span>
+                        <time date="2019-01-16">12 hours ago</time>
+                        <span class="badge badge-white">HOT</span>
                     </header>
                     <h2>Rock and Roll hall of fame</h2>
                     <p>Jelly muffin candy canes chocolate croissant tootsie roll carrot cake caramels sesame snaps. Pastry dessert cake ice cream chocolate tiramisu jelly beans. Liquorice gummies bear claw. Sweet cookie cupcake apple pie soufflé cheesecake bonbon cupcake. Biscuit muffin halvah toffee cookie dessert tootsie roll tiramisu.</p>
-                    <footer>
+                    <nav>
                         <a href="#" class="btn">Read More</a>
-                        <a href="#"><i class="far fa-comment-alt"></i>7 Responses</a>
-                        <a href="#"><i class="far fa-heart"></i>1221</a>
-                    </footer>
+                        <a href="#">
+                            <i class="far fa-comment-alt"></i>
+                            7 Responses
+                        </a>
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                            1337
+                        </a>
+                    </nav>
                 </article>
-                <article class="card card-red">
+                <article class="card color-red">
                     <header>
                         <time date="2019-01-16">January 16, 2019</time>
                     </header>
                     <h2>Red Hot Chili Peppers to Perform With Post Malone</h2>
                     <p>Transvaluation snare passion oneself madness ultimate. Battle derive decrepit derive morality decrepit oneself ascetic prejudice aversion joy inexpedient against. Battle aversion truth virtues hope. Madness battle of society evil justice grandeur.</p>
-                    <footer>
+                    <nav>
                         <a href="#" class="btn">Read More</a>
-                        <a href="#"><i class="far fa-comment-alt"></i>7 Responses</a>
-                        <a href="#"><i class="far fa-heart"></i>1221</a>
-                    </footer>
+                        <a href="#">
+                            <i class="far fa-comment-alt"></i>
+                            7 Responses
+                        </a>
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                            1221
+                        </a>
+                    </nav>
                 </article>
             </div>
         </div>
     </main>
-    <!-- / MAIN -->
 
     <footer class="page-footer">
         <div class="container">
-            <p>Review exercise <abbr title="Web Technology I">WEBTECH-I</abbr> | <a href="https://www.gdm.gent">www.gdm.gent</a></p>
+            <div class="row">
+                <div class="col">
+                    <p>Review exercise <abbr title="Web Technology I">WEBTECH-I</abbr> | <a href="https://www.gdm.gent">www.gdm.gent</a></p>
+                </div>
+            </div>
         </div>
     </footer>
 

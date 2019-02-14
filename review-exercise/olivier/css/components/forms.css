@@ -8,9 +8,16 @@
 .frm-search input {
   background-color: inherit;
   padding: 0 1rem;
+  color: var(--color-grey-light);
+}
+.frm-search input:focus {
+  background-color: inherit;
+  padding: 0 1rem;
+  color: var(--color);
+  transition: .5s all ease;
 }
 .frm-search button {
-  background-color: var(--category-blue);
+  background-color: var(--color);
   color: var(--color-white);
   font-size: 1rem;
   padding: 1rem;

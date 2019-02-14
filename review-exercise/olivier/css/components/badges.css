@@ -1,0 +1,10 @@
+.badge {
+  font-size: .75rem;
+  padding: 2px 7px;
+  margin: 0 7px;
+  text-transform: uppercase;
+}
+.badge-white {
+  background-color: var(--color-white);
+  color: var(--color, inherit);
+}

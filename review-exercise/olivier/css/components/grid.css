@@ -1,0 +1,28 @@
+.container {
+    margin: 0 auto;
+    max-width: 94rem;
+    min-width: 50rem;
+    padding: 0 var(--unit);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.col {
+  --col-width: 100%;
+  box-sizing: border-box;
+  padding: 0 var(--unit);
+  width: var(--col-width);
+}
+.col-4 {
+  width: calc(var(--col-width) / 3);
+}
+.col-6 {
+  width: calc(var(--col-width) / 2);
+}
+.col-8 {
+  width: calc(var(--col-width) * 2 / 3);
+}
