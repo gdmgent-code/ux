@@ -1,6 +1,6 @@
 .btn {
-  border: 1px solid var(--color-white);
-  color: var(--color-white);
+  border: 1px solid var(--colour-white);
+  color: var(--colour-white);
   padding: .75rem 1rem;
 }
 .btn:hover {
