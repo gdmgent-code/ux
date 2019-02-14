@@ -119,6 +119,12 @@
 }
 
 /*-- MAIN HOST --*/
+main .row {
+  padding-top: var(--unit);
+  padding-bottom: calc(var(--unit) * 2)
+}
+
+/*-- MAIN HOST --*/
 .host {
   background-color: var(--color-white);
   color: var(--color-grey-light);
@@ -197,7 +203,7 @@
   padding: 2rem;
 }
 .articles article + article {
-  margin-top: var(--unit);
+  margin-top: calc(var(--unit) * 2);
 }
 .articles header,
 .articles nav {
@@ -229,6 +235,7 @@
 /*-- PAGE FOOTER --*/
 .page-footer {
   color: var(--color-grey-dark);
+  padding: calc(var(--unit) * 1.5) 0;
 }
 .page-footer a {
   color: var(--color-black);

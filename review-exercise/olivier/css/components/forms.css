@@ -9,6 +9,7 @@
   background-color: inherit;
   padding: 0 1rem;
   color: var(--color-grey-light);
+  font-size: 1rem;
 }
 .frm-search input:focus {
   background-color: inherit;
