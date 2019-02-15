@@ -16,3 +16,6 @@ a {
 a i {
   padding-right: .1875em;
 }
+img {
+  width: 100%;
+}

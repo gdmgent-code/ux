@@ -1,28 +1,28 @@
+.grid-16 {
+  --cols: 12;
+}
+
 .container {
-    margin: 0 auto;
-    max-width: 94rem;
-    min-width: 50rem;
-    padding: 0 var(--unit);
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 94rem;
+  min-width: 50rem;
+  padding: 0 var(--unit);
 }
 
 .row {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
 }
 
 .col {
-  --col-width: 100%;
   box-sizing: border-box;
+  flex: 0 1 100%;
   padding: 0 var(--unit);
-  width: var(--col-width);
 }
 .col-4 {
-  width: calc(var(--col-width) / 3);
-}
-.col-6 {
-  width: calc(var(--col-width) / 2);
+  flex-basis: calc(100% * 4 / var(--cols, 12));
 }
 .col-8 {
-  width: calc(var(--col-width) * 2 / 3);
+  flex-basis: calc(100% * 8 / var(--cols, 12));
 }
