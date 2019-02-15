@@ -18,8 +18,14 @@
 .page-header {
   padding-top: var(--unit);
 }
-.page-header h1 {
+.page-header .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
+}
+.page-header .logo img {
+  display: block;
 }
 .page-header .row:first-child .col {
   display: flex;
