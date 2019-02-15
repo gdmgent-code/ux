@@ -1,7 +1,6 @@
 .frm-search {
   background-color: var(--colour-grey-lighter);
   display: flex;
-  margin: 1rem 0 1rem auto;
 }
 .frm-search * {
   border: none;

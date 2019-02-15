@@ -1,8 +1,8 @@
 .card {
-  background-color:  var(--color, --colour-white);
+  background-color: var(--color, --colour-white);
   box-shadow: 1px 1px 16px -8px var(--colour-grey-dark);
 }
-.card.color-blue,
-.card.color-red {
+.card.colour-blue,
+.card.colour-red {
   color: var(--colour-white);
 }

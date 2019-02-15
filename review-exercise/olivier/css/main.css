@@ -2,25 +2,13 @@
 
 @import url('variables.css');
 @import url('base.css');
+@import url('helpers.css');
 
 @import url('components/badges.css');
 @import url('components/buttons.css');
 @import url('components/cards.css');
 @import url('components/forms.css');
 @import url('components/grid.css');
-
-.color-blue {
-  --color: var(--colour-blue);
-}
-.color-green {
-  --color: var(--colour-green);
-}
-.color-red {
-  --color: var(--colour-red);
-}
-.color-yellow {
-  --color: var(--colour-yellow);
-}
 
 /*-- PAGE HEADER --*/
 .page-header,
@@ -35,9 +23,7 @@
 }
 .page-header .row:first-child .col {
   display: flex;
-}
-.page-header .frm-search {
-  margin: 0 0 0 auto;
+  justify-content: space-between;
 }
 
 /*-- NAVIGATION --*/
@@ -67,8 +53,8 @@
   padding-bottom: calc(var(--offset) + var(--size));
 }
 .nav-main a:hover {
-  color: var(--color);
   border-bottom: var(--size) solid var(--color);
+  color: var(--color);
   padding-bottom: var(--offset);
   transition: all .1s;
 }
@@ -90,7 +76,6 @@
 }
 .banner-posts img {
   display: block;
-  width: 100%;
 }
 .banner-posts header {
   padding: var(--unit);
@@ -107,7 +92,7 @@
   background: linear-gradient(to right, var(--colour-red), var(--colour-green));
   font-weight: 900;
 }
-.banner-posts .col-4 h2 {
+.banner-posts .row:not(:first-of-type) h2 {
   font-size: 1rem;
 }
 .banner-posts h3 {
