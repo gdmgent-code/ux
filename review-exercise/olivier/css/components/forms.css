@@ -1,5 +1,5 @@
 .frm-search {
-  background-color: var(--color-grey-lighter);
+  background-color: var(--colour-grey-lighter);
   margin: 1rem 0 1rem auto;
 }
 .frm-search * {
@@ -7,18 +7,19 @@
 }
 .frm-search input {
   background-color: inherit;
+  color: var(--colour-grey-light);
+  font-size: 1rem;
   padding: 0 1rem;
-  color: var(--color-grey-light);
 }
 .frm-search input:focus {
   background-color: inherit;
-  padding: 0 1rem;
   color: var(--color);
+  padding: 0 1rem;
   transition: .5s all ease;
 }
 .frm-search button {
   background-color: var(--color);
-  color: var(--color-white);
+  color: var(--colour-white);
   font-size: 1rem;
   padding: 1rem;
 }

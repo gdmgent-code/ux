@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Merriweather:300,400,700,900');
+
+@import url('variables.css');
+@import url('base.css');
+
+@import url('components/badges.css');
+@import url('components/buttons.css');
+@import url('components/cards.css');
+@import url('components/forms.css');
+@import url('components/grid.css');
+
+.color-blue {
+  --color: var(--color-blue);
+}
+.color-green {
+  --color: var(--color-green);
+}
+.color-red {
+  --color: var(--color-red);
+}
+.color-yellow {
+  --color: var(--color-yellow);
+}
+
+/*-- PAGE HEADER --*/
+
+/*-- NAVIGATION --*/
+
+/*-- BANNER POSTS --*/
+
+/*-- MAIN --*/
+
+/*-- MAIN HOST --*/
+
+/*-- MAIN CATEGORIES --*/
+
+/*-- MAIN ARTICLES --*/
+
+/*-- PAGE FOOTER --*/
