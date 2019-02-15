@@ -74,12 +74,20 @@
   position: relative;
   text-decoration: none;
 }
+.banner-posts a:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+.banner-posts a:hover img {
+  z-index: -1;
+}
 .banner-posts img {
   display: block;
+  position: relative;
 }
 .banner-posts header {
   padding: var(--unit);
   position: absolute;
+  z-index: 1;
 }
 .banner-posts h2,
 .banner-posts h3 {
