@@ -2,6 +2,7 @@
 
 @import url('variables.css');
 @import url('base.css');
+@import url('helpers.css');
 
 @import url('components/badges.css');
 @import url('components/buttons.css');
@@ -9,31 +10,18 @@
 @import url('components/forms.css');
 @import url('components/grid.css');
 
-.colour-blue {
-  --color: var(--colour-blue);
-}
-.colour-green {
-  --color: var(--colour-green);
-}
-.colour-red {
-  --color: var(--colour-red);
-}
-.colour-yellow {
-  --color: var(--colour-yellow);
-}
-
 /*-- PAGE HEADER --*/
 
-/*-- NAVIGATION --*/
+/*-- PAGE HEADER - NAVIGATION --*/
 
 /*-- BANNER POSTS --*/
 
-/*-- MAIN --*/
+/*-- PAGE MAIN --*/
 
-/*-- MAIN HOST --*/
+/*-- PAGE MAIN - HOST --*/
 
-/*-- MAIN CATEGORIES --*/
+/*-- PAGE MAIN - CATEGORIES --*/
 
-/*-- MAIN ARTICLES --*/
+/*-- PAGE MAIN - ARTICLES --*/
 
 /*-- PAGE FOOTER --*/
