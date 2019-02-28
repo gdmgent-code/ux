@@ -11,10 +11,7 @@ body {
 
 body {
     background-color: var(--c-ahs-grijs-licht);
-    /* display: flex; */
-    /* flex-direction: column; */
     font-family: var(--f-body);
-    /* justify-content: center; */
 }
 
 body::after {
