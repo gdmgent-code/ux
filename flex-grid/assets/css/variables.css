@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i');
+
+:root {
+  /** Colours */
+  --c-ahs-blauw: hsl(190, 100%, 40%);
+  --c-ahs-fuchsia: hsl(325, 100%, 40%);
+  --c-ahs-grijs-donker:hsl(0, 0%, 47%);
+  --c-ahs-grijs-donker-alpha:hsla(0, 0%, 47%, .2);
+  --c-ahs-grijs-licht: hsl(0, 0%, 87%);
+  --c-ahs-grijs-midden: hsl(0, 0%, 67%);
+  --c-ahs-groen: hsl(65, 100%, 40%);
+  --c-ahs-oranje: hsl(39, 100%, 47%);
+
+  --c-primary: var(--c-ahs-oranje);
+  --c-secondary: var(--c-ahs-groen);
+  --c-tertiary: var(--c-ahs-blauw);
+  --c-quaternary: var(--c-ahs-fuchsia);
+  --c-quinary: var(--c-ahs-grijs-licht);
+
+  /** Fonts */
+  --f-body: 'Source Sans Pro';
+  --f-heading: 'Source Sans Pro';
+
+  /** Unit */
+  --unit: 1rem;
+}
