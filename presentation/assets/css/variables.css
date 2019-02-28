@@ -1,0 +1,19 @@
+:root {
+    --colour-primary: 85;
+
+    --colour-tertiary: 160;
+    --colour-primary-lightest: hsl(var(--colour-primary), 100%, 100%);
+    --colour-primary-lighter: hsl(var(--colour-primary), 100%, 90%);
+    --colour-primary-light: hsl(var(--colour-primary), 100%, 80%);
+    --colour-primary-base: hsl(var(--colour-primary), 100%, 60%);
+    --colour-primary-dark: hsl(var(--colour-primary), 100%, 40%);
+    --colour-primary-darker: hsl(var(--colour-primary), 100%, 30%);
+    --colour-primary-darkest: hsl(var(--colour-primary), 100%, 10%);
+
+    --colour-secondary: 260;
+    --colour-secondary-base: hsl(var(--colour-secondary), 100%, 60%);
+    --colour-secondary-darker: hsl(var(--colour-secondary), 100%, 30%);
+
+    --font-primary: Arial, sans-serif;
+    --font-monospace: 'Share Tech Mono', monospace;
+}

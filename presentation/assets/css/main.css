@@ -1,0 +1,68 @@
+@import url('https://necolas.github.io/normalize.css/latest/normalize.css');
+@import url('fonts.css');
+@import url('variables.css');
+
+:root {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+body > section {
+    margin: 5rem auto;
+    max-width: 90rem;
+    position: relative;
+}
+section>section {
+    background-color: var(--colour-primary-base);
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 5rem auto 5rem;
+    min-height: calc(100vh - 10rem);
+    padding: 5%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    /* transform: rotate(90deg); */
+    transform-origin: 0 0;
+    transition: transform 1s, opacity 0.8s;
+}
+section>section+section {
+    background-color: var(--colour-secondary-base);
+}
+section>section>:not(header):not(footer) {
+    background: red;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+section:first>section:first {
+    z-index: 0;
+}
+
+
+section>section header,
+section>section footer {
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+section>section footer {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+section:target {
+    /* transform: rotate(0deg); */
+    z-index: 1;
+}
+
+section:target~section {
+    opacity: 0;
+    /* transform: rotate(-90deg); */
+}
