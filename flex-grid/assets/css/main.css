@@ -41,6 +41,11 @@ h1 {
         1px 7px 9px hsla(0, 0%, 0%, .5);
 }
 
+::selection {
+    background-color: #FF0;
+    color: black;
+}
+
 @media (max-width: 575.99999px) {
     html[data-debug] body::after {
         content: "extra small device";

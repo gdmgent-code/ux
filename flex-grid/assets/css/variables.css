@@ -21,6 +21,6 @@
   --f-body: 'Source Sans Pro';
   --f-heading: 'Source Sans Pro';
 
-  /** Unit */
-  --unit: .5rem;
+  /** Grid */
+  --gutter: .75rem;
 }
