@@ -22,9 +22,12 @@ body {
     height: 100%;
 }
 
+.card-recipe img {
+    display: block;
+}
+
 .card-recipe h1 {
     font-size: 1.375rem;
-    margin: 0 1.75rem 1.75rem 1.75rem;
 }
 
 .card-recipe h1::before {
@@ -36,9 +39,8 @@ body {
     text-transform: uppercase;
 }
 
-.card-recipe p,
-.card-recipe p {
-    font-size: 1.375rem;
+.card-recipe .no-gutter {
+    padding: 0;
 }
 
 [lang=nl] .card-recipe--classic h1::before {
@@ -55,4 +57,24 @@ body {
 
 [lang=nl] .card-recipe--veggie h1::before {
     content: 'veggie'
+}
+
+@media (max-width: 575.99999px) {
+    /** Extra Small Device */
+}
+
+@media (min-width: 576px) and (max-width: 767.99999px) {
+    /** Small Device */
+}
+
+@media (min-width: 768px) and (max-width: 991.99999px) {
+    /** Medium Device */
+}
+
+@media (min-width: 992px) and (max-width: 1199.99999px) {
+    /** Large Device */
+}
+
+@media (min-width: 1200px) {
+    /** Extra Large Device */
 }
