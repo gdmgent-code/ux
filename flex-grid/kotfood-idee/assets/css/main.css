@@ -1,0 +1,58 @@
+@import url('variables.css');
+@import url('components/grid.css');
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: var(--f-body);
+    font-weight: 500;
+    height: inherit;
+    margin: 0;
+}
+
+.logo {
+    font-weight: normal;
+}
+
+.card-recipe {
+    border: 1px solid var(--c-primary);
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.card-recipe h1 {
+    font-size: 1.375rem;
+    margin: 0 1.75rem 1.75rem 1.75rem;
+}
+
+.card-recipe h1::before {
+    color: var(--c-secondary);
+    display: block;
+    font-family: var(--f-secondary);
+    font-size: .75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.card-recipe p,
+.card-recipe p {
+    font-size: 1.375rem;
+}
+
+[lang=nl] .card-recipe--classic h1::before {
+    content: 'klassieker';
+}
+
+[lang=nl] .card-recipe--hangover h1::before {
+    content: 'katerfood';
+}
+
+[lang=nl] .card-recipe--salad h1::before {
+    content: 'salade';
+}
+
+[lang=nl] .card-recipe--veggie h1::before {
+    content: 'veggie'
+}
