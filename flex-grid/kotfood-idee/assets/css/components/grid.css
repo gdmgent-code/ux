@@ -1,11 +1,11 @@
-.grid-16 {
-  --cols: 16;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1200px;
   padding: calc(var(--gutter) / 2);
+}
+
+.container.container--grid-16 {
+  --cols: 16;
 }
 
 .row {
@@ -25,7 +25,7 @@
   flex-wrap: wrap;
 }
 
-.grid-16 .row {
+.container.container--grid-16 .row {
   --col-13: calc(100% * 13 / var(--cols, 16));
   --col-14: calc(100% * 14 / var(--cols, 16));
   --col-15: calc(100% * 15 / var(--cols, 16));

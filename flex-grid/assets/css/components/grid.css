@@ -1,10 +1,15 @@
-html[data-debug] [class*="col"] {
+html[data-debug] .container:not([data-debug=false]) .row:not([data-debug=false]) [class*="col"] {
   border: 1px dashed rgba(0, 0, 0, .05);
+  box-sizing: border-box;
   min-height: 4rem;
   position: relative;
 }
 
-html[data-debug] [class*="col"]::before {
+html[data-debug] .container:not([data-debug=false]) .row:not([data-debug=false]):nth-child(odd) {
+  background-color: rgba(255, 255, 255, .25);
+}
+
+html[data-debug] .container:not([data-debug=false]) .row:not([data-debug=false]) [class*="col"]::before {
   background-color: rgba(0, 0, 0, .25);
   border-radius: .25rem;
   bottom: 0;
@@ -18,23 +23,23 @@ html[data-debug] [class*="col"]::before {
   position: absolute;
   right: 0;
   text-align: center;
-  text-shadow: 0px 0px 1px black, 1px 1px 1px black;
+  text-shadow: 0 0 1px black, 1px 1px 1px black;
   top: 0;
 }
 
-html[data-debug] .grid-16 [class*="col"]::before {
-  content: 'grid-16 'attr(class);
-}
-
-.grid-16 {
-  --cols: 16;
-  /* grid met 16 kolommen */
+html[data-debug] .container.container--grid-16:not([data-debug=false]) .row:not([data-debug=false]) [class*="col"]::before {
+  content: '16 grid: 'attr(class);
 }
 
 .container {
   margin: 0 auto;
   max-width: 1200px;
   padding: calc(var(--gutter) / 2);
+}
+
+.container.container--grid-16 {
+  --cols: 16;
+  /* grid met 16 kolommen */
 }
 
 .row {
@@ -54,7 +59,7 @@ html[data-debug] .grid-16 [class*="col"]::before {
   flex-wrap: wrap;
 }
 
-.grid-16 .row {
+.container.container--grid-16 .row {
   --col-13: calc(100% * 13 / var(--cols, 16));
   --col-14: calc(100% * 14 / var(--cols, 16));
   --col-15: calc(100% * 15 / var(--cols, 16));
@@ -130,19 +135,19 @@ html[data-debug] .grid-16 [class*="col"]::before {
   flex: 0 0 var(--col-12);
 }
 
-.grid-16 .col-13 {
+.container.container--grid-16 .col-13 {
   flex: 0 0 var(--col-13);
 }
 
-.grid-16 .col-14 {
+.container.container--grid-16 .col-14 {
   flex: 0 0 var(--col-14);
 }
 
-.grid-16 .col-15 {
+.container.container--grid-16 .col-15 {
   flex: 0 0 var(--col-15);
 }
 
-.grid-16 .col-16 {
+.container.container--grid-16 .col-16 {
   flex: 0 0 var(--col-16);
 }
 
@@ -194,19 +199,19 @@ html[data-debug] .grid-16 [class*="col"]::before {
   margin-left: var(--col-12);
 }
 
-.grid-16 .offset-13 {
+.container.container--grid-16 .offset-13 {
   margin-left: var(--col-13);
 }
 
-.grid-16 .offset-14 {
+.container.container--grid-16 .offset-14 {
   margin-left: var(--col-14);
 }
 
-.grid-16 .offset-15 {
+.container.container--grid-16 .offset-15 {
   margin-left: var(--col-15);
 }
 
-.grid-16 .offset-16 {
+.container.container--grid-16 .offset-16 {
   margin-left: var(--col-16);
 }
 
@@ -259,19 +264,19 @@ html[data-debug] .grid-16 [class*="col"]::before {
     flex: 0 0 var(--col-12);
   }
 
-  .grid-16 .col-sm-13 {
+  .container.container--grid-16 .col-sm-13 {
     flex: 0 0 var(--col-13);
   }
 
-  .grid-16 .col-sm-14 {
+  .container.container--grid-16 .col-sm-14 {
     flex: 0 0 var(--col-14);
   }
 
-  .grid-16 .col-sm-15 {
+  .container.container--grid-16 .col-sm-15 {
     flex: 0 0 var(--col-15);
   }
 
-  .grid-16 .col-sm-16 {
+  .container.container--grid-16 .col-sm-16 {
     flex: 0 0 var(--col-16);
   }
 
@@ -323,19 +328,19 @@ html[data-debug] .grid-16 [class*="col"]::before {
     margin-left: var(--col-12);
   }
 
-  .grid-16 .offset-sm-13 {
+  .container.container--grid-16 .offset-sm-13 {
     margin-left: var(--col-13);
   }
 
-  .grid-16 .offset-sm-14 {
+  .container.container--grid-16 .offset-sm-14 {
     margin-left: var(--col-14);
   }
 
-  .grid-16 .offset-sm-15 {
+  .container.container--grid-16 .offset-sm-15 {
     margin-left: var(--col-15);
   }
 
-  .grid-16 .offset-sm-16 {
+  .container.container--grid-16 .offset-sm-16 {
     margin-left: var(--col-16);
   }
 }
@@ -389,19 +394,19 @@ html[data-debug] .grid-16 [class*="col"]::before {
     flex: 0 0 var(--col-12);
   }
 
-  .grid-16 .col-md-13 {
+  .container.container--grid-16 .col-md-13 {
     flex: 0 0 var(--col-13);
   }
 
-  .grid-16 .col-md-14 {
+  .container.container--grid-16 .col-md-14 {
     flex: 0 0 var(--col-14);
   }
 
-  .grid-16 .col-md-15 {
+  .container.container--grid-16 .col-md-15 {
     flex: 0 0 var(--col-15);
   }
 
-  .grid-16 .col-md-16 {
+  .container.container--grid-16 .col-md-16 {
     flex: 0 0 var(--col-16);
   }
 
@@ -453,19 +458,19 @@ html[data-debug] .grid-16 [class*="col"]::before {
     margin-left: var(--col-12);
   }
 
-  .grid-16 .offset-md-13 {
+  .container.container--grid-16 .offset-md-13 {
     margin-left: var(--col-13);
   }
 
-  .grid-16 .offset-md-14 {
+  .container.container--grid-16 .offset-md-14 {
     margin-left: var(--col-14);
   }
 
-  .grid-16 .offset-md-15 {
+  .container.container--grid-16 .offset-md-15 {
     margin-left: var(--col-15);
   }
 
-  .grid-16 .offset-md-16 {
+  .container.container--grid-16 .offset-md-16 {
     margin-left: var(--col-16);
   }
 }
@@ -519,19 +524,19 @@ html[data-debug] .grid-16 [class*="col"]::before {
     flex: 0 0 var(--col-12);
   }
 
-  .grid-16 .col-lg-13 {
+  .container.container--grid-16 .col-lg-13 {
     flex: 0 0 var(--col-13);
   }
 
-  .grid-16 .col-lg-14 {
+  .container.container--grid-16 .col-lg-14 {
     flex: 0 0 var(--col-14);
   }
 
-  .grid-16 .col-lg-15 {
+  .container.container--grid-16 .col-lg-15 {
     flex: 0 0 var(--col-15);
   }
 
-  .grid-16 .col-lg-16 {
+  .container.container--grid-16 .col-lg-16 {
     flex: 0 0 var(--col-16);
   }
 
@@ -583,19 +588,19 @@ html[data-debug] .grid-16 [class*="col"]::before {
     margin-left: var(--col-12);
   }
 
-  .grid-16 .offset-lg-13 {
+  .container.container--grid-16 .offset-lg-13 {
     margin-left: var(--col-13);
   }
 
-  .grid-16 .offset-lg-14 {
+  .container.container--grid-16 .offset-lg-14 {
     margin-left: var(--col-14);
   }
 
-  .grid-16 .offset-lg-15 {
+  .container.container--grid-16 .offset-lg-15 {
     margin-left: var(--col-15);
   }
 
-  .grid-16 .offset-lg-16 {
+  .container.container--grid-16 .offset-lg-16 {
     margin-left: var(--col-16);
   }
 }
@@ -650,19 +655,19 @@ html[data-debug] .grid-16 [class*="col"]::before {
     flex: 0 0 var(--col-12);
   }
 
-  .grid-16 .col-xl-13 {
+  .container.container--grid-16 .col-xl-13 {
     flex: 0 0 var(--col-13);
   }
 
-  .grid-16 .col-xl-14 {
+  .container.container--grid-16 .col-xl-14 {
     flex: 0 0 var(--col-14);
   }
 
-  .grid-16 .col-xl-15 {
+  .container.container--grid-16 .col-xl-15 {
     flex: 0 0 var(--col-15);
   }
 
-  .grid-16 .col-xl-16 {
+  .container.container--grid-16 .col-xl-16 {
     flex: 0 0 var(--col-16);
   }
 
@@ -714,19 +719,19 @@ html[data-debug] .grid-16 [class*="col"]::before {
     margin-left: var(--col-12);
   }
 
-  .grid-16 .offset-xl-13 {
+  .container.container--grid-16 .offset-xl-13 {
     margin-left: var(--col-13);
   }
 
-  .grid-16 .offset-xl-14 {
+  .container.container--grid-16 .offset-xl-14 {
     margin-left: var(--col-14);
   }
 
-  .grid-16 .offset-xl-15 {
+  .container.container--grid-16 .offset-xl-15 {
     margin-left: var(--col-15);
   }
 
-  .grid-16 .offset-xl-16 {
+  .container.container--grid-16 .offset-xl-16 {
     margin-left: var(--col-16);
   }
 }
