@@ -1,7 +1,7 @@
 @import url('variables.css');
 @import url('components/grid.css');
 
-html[data-debug] body::after {
+html[data-debug]:not([data-debug="false"]) body::after {
     background-color: rgba(0, 0, 0, .25);
     border-radius: .25rem;
     box-shadow: -.25rem .25rem .5rem 0 rgba(0, 0, 0, .50);
@@ -47,7 +47,7 @@ h1 {
 }
 
 @media (max-width: 575.99999px) {
-    html[data-debug] body::after {
+    html[data-debug]:not([data-debug="false"]) body::after {
         content: "extra small device";
     }
 
@@ -57,7 +57,7 @@ h1 {
 }
 
 @media (min-width: 576px) and (max-width: 767.99999px) {
-    html[data-debug] body::after {
+    html[data-debug]:not([data-debug="false"]) body::after {
         content: "small device";
     }
 
@@ -67,7 +67,7 @@ h1 {
 }
 
 @media (min-width: 768px) and (max-width: 991.99999px) {
-    html[data-debug] body::after {
+    html[data-debug]:not([data-debug="false"]) body::after {
         content: "medium device";
     }
 
@@ -77,7 +77,7 @@ h1 {
 }
 
 @media (min-width: 992px) and (max-width: 1199.99999px) {
-    html[data-debug] body::after {
+    html[data-debug]:not([data-debug="false"]) body::after {
         content: "large device";
     }
 
@@ -87,7 +87,7 @@ h1 {
 }
 
 @media (min-width: 1200px) {
-    html[data-debug] body::after {
+    html[data-debug]:not([data-debug="false"]) body::after {
         content: "extra large device";
     }
 

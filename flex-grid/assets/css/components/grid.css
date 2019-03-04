@@ -1,15 +1,15 @@
-html[data-debug] .container:not([data-debug=false]) .row:not([data-debug=false]) [class*="col"] {
+html[data-debug]:not([data-debug="false"]) .container:not([data-debug="false"]) .row:not([data-debug="false"]) [class*="col"] {
   border: 1px dashed rgba(0, 0, 0, .05);
   box-sizing: border-box;
   min-height: 4rem;
   position: relative;
 }
 
-html[data-debug] .container:not([data-debug=false]) .row:not([data-debug=false]):nth-child(odd) {
+html[data-debug]:not([data-debug="false"]) .container:not([data-debug="false"]) .row:not([data-debug="false"]):nth-child(odd) {
   background-color: rgba(255, 255, 255, .25);
 }
 
-html[data-debug] .container:not([data-debug=false]) .row:not([data-debug=false]) [class*="col"]::before {
+html[data-debug]:not([data-debug="false"]) .container:not([data-debug="false"]) .row:not([data-debug="false"]) [class*="col"]::before {
   background-color: rgba(0, 0, 0, .25);
   border-radius: .25rem;
   bottom: 0;
@@ -27,7 +27,7 @@ html[data-debug] .container:not([data-debug=false]) .row:not([data-debug=false])
   top: 0;
 }
 
-html[data-debug] .container.container--grid-16:not([data-debug=false]) .row:not([data-debug=false]) [class*="col"]::before {
+html[data-debug]:not([data-debug="false"]) .container.container--grid-16:not([data-debug="false"]) .row:not([data-debug="false"]) [class*="col"]::before {
   content: '16 grid: 'attr(class);
 }
 
@@ -38,8 +38,8 @@ html[data-debug] .container.container--grid-16:not([data-debug=false]) .row:not(
 }
 
 .container.container--grid-16 {
-  --cols: 16;
   /* grid met 16 kolommen */
+  --cols: 16;
 }
 
 .row {
@@ -81,6 +81,11 @@ html[data-debug] .container.container--grid-16:not([data-debug=false]) .row:not(
 .col-12 {
   box-sizing: border-box;
   padding: calc(var(--gutter) / 2);
+}
+
+.no-gutter {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .col {
