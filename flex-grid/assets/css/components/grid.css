@@ -33,7 +33,7 @@ html[data-debug]:not([data-debug="false"]) .container.container--grid-16:not([da
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: calc(1200px - var(--gutter));
   padding: calc(var(--gutter) / 2);
 }
 
@@ -60,10 +60,10 @@ html[data-debug]:not([data-debug="false"]) .container.container--grid-16:not([da
 }
 
 .container.container--grid-16 .row {
-  --col-13: calc(100% * 13 / var(--cols, 16));
-  --col-14: calc(100% * 14 / var(--cols, 16));
-  --col-15: calc(100% * 15 / var(--cols, 16));
-  --col-16: calc(100% * 16 / var(--cols, 16));
+  --col-13: calc(100% * 13 / var(--cols));
+  --col-14: calc(100% * 14 / var(--cols));
+  --col-15: calc(100% * 15 / var(--cols));
+  --col-16: calc(100% * 16 / var(--cols));
 }
 
 .col,
