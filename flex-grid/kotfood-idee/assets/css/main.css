@@ -12,6 +12,10 @@ body {
   margin: 0;
 }
 
+.container {
+  padding: 0;
+}
+
 .logo {
   font-weight: normal;
 }
@@ -34,7 +38,8 @@ body {
 }
 
 .card-recipe h1 {
-  font-size: 1.375rem;
+  font-size: 1rem;
+  line-height: 1.1875em;
 }
 
 .card-recipe h1::before {
@@ -43,6 +48,7 @@ body {
   font-family: var(--f-secondary);
   font-size: .625em;
   letter-spacing: 0.12em;
+  padding-bottom: .25em;
   text-transform: uppercase;
 }
 
@@ -66,25 +72,26 @@ body {
   content: 'veggie'
 }
 
+/** Extra Small Device */
 @media (max-width: 575.99999px) {
-  /** Extra Small Device */
-  .card-recipe h1 {
-    font-size: 1rem;
-  }
+
 }
 
+/** Small Device */
 @media (min-width: 576px) and (max-width: 767.99999px) {
-  /** Small Device */
 }
 
+/** Medium Device */
 @media (min-width: 768px) and (max-width: 991.99999px) {
-  /** Medium Device */
 }
 
+/** Large Device */
 @media (min-width: 992px) and (max-width: 1199.99999px) {
-  /** Large Device */
 }
 
+/** Extra Large Device */
 @media (min-width: 1200px) {
-  /** Extra Large Device */
+  .card-recipe h1 {
+    font-size: 1.375rem;
+  }
 }
