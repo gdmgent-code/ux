@@ -45,7 +45,11 @@
 .col-9,
 .col-10,
 .col-11,
-.col-12 {
+.col-12,
+.container.container--grid-16 .col-13,
+.container.container--grid-16 .col-14,
+.container.container--grid-16 .col-15,
+.container.container--grid-16 .col-16 {
   box-sizing: border-box;
   padding: calc(var(--gutter) / 2);
 }

@@ -22,8 +22,15 @@ body {
   height: 100%;
 }
 
-.card-recipe img {
+.card-recipe img,
+.card-recipe picture {
   display: block;
+}
+
+.card-recipe img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .card-recipe h1 {
@@ -34,7 +41,7 @@ body {
   color: var(--c-secondary);
   display: block;
   font-family: var(--f-secondary);
-  font-size: .75rem;
+  font-size: .625em;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -61,6 +68,9 @@ body {
 
 @media (max-width: 575.99999px) {
   /** Extra Small Device */
+  .card-recipe h1 {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.99999px) {
