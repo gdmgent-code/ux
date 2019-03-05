@@ -2,79 +2,79 @@
 @import url('components/grid.css');
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    font-family: var(--f-body);
-    font-weight: 500;
-    height: inherit;
-    margin: 0;
+  font-family: var(--f-body);
+  font-weight: 500;
+  height: inherit;
+  margin: 0;
 }
 
 .logo {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .card-recipe {
-    border: 1px solid var(--c-primary);
-    box-sizing: border-box;
-    height: 100%;
+  border: 1px solid var(--c-primary);
+  box-sizing: border-box;
+  height: 100%;
 }
 
 .card-recipe img {
-    display: block;
+  display: block;
 }
 
 .card-recipe h1 {
-    font-size: 1.375rem;
+  font-size: 1.375rem;
 }
 
 .card-recipe h1::before {
-    color: var(--c-secondary);
-    display: block;
-    font-family: var(--f-secondary);
-    font-size: .75rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+  color: var(--c-secondary);
+  display: block;
+  font-family: var(--f-secondary);
+  font-size: .75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .card-recipe .no-gutter {
-    padding: 0;
+  padding: 0;
 }
 
 [lang=nl] .card-recipe--classic h1::before {
-    content: 'klassieker';
+  content: 'klassieker';
 }
 
 [lang=nl] .card-recipe--hangover h1::before {
-    content: 'katerfood';
+  content: 'katerfood';
 }
 
 [lang=nl] .card-recipe--salad h1::before {
-    content: 'salade';
+  content: 'salade';
 }
 
 [lang=nl] .card-recipe--veggie h1::before {
-    content: 'veggie'
+  content: 'veggie'
 }
 
 @media (max-width: 575.99999px) {
-    /** Extra Small Device */
+  /** Extra Small Device */
 }
 
 @media (min-width: 576px) and (max-width: 767.99999px) {
-    /** Small Device */
+  /** Small Device */
 }
 
 @media (min-width: 768px) and (max-width: 991.99999px) {
-    /** Medium Device */
+  /** Medium Device */
 }
 
 @media (min-width: 992px) and (max-width: 1199.99999px) {
-    /** Large Device */
+  /** Large Device */
 }
 
 @media (min-width: 1200px) {
-    /** Extra Large Device */
+  /** Extra Large Device */
 }

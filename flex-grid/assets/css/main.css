@@ -1,64 +1,63 @@
 @import url('variables.css');
 @import url('components/grid.css');
-
 @import url('debug.css');
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    background-color: var(--c-ahs-grijs-licht);
-    font-family: var(--f-body);
-    height: inherit;
-    margin: 0;
+  background-color: var(--c-ahs-grijs-licht);
+  font-family: var(--f-body);
+  height: inherit;
+  margin: 0;
 }
 
 h1 {
-    --c-shadow: var(--c-ahs-grijs-donker-alpha);
-    color: white;
-    font-family: var(--f-heading);
-    text-shadow:
-        1px 1px 1px var(--c-shadow),
-        1px 2px 1px var(--c-shadow),
-        1px 3px 1px var(--c-shadow),
-        1px 4px 1px var(--c-shadow),
-        1px 5px 1px var(--c-shadow),
-        1px 6px 1px var(--c-shadow),
-        1px 7px 9px hsla(0, 0%, 0%, .5);
+  --c-shadow: var(--c-ahs-grijs-donker-alpha);
+  color: white;
+  font-family: var(--f-heading);
+  text-shadow:
+    1px 1px 1px var(--c-shadow),
+    1px 2px 1px var(--c-shadow),
+    1px 3px 1px var(--c-shadow),
+    1px 4px 1px var(--c-shadow),
+    1px 5px 1px var(--c-shadow),
+    1px 6px 1px var(--c-shadow),
+    1px 7px 9px hsla(0, 0%, 0%, .5);
 }
 
 ::selection {
-    background-color: #FF0;
-    color: black;
+  background-color: #FF0;
+  color: black;
 }
 
 @media (max-width: 575.99999px) {
-    body {
-        background-color: var(--c-quinary);
-    }
+  body {
+    background-color: var(--c-quinary);
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.99999px) {
-    body {
-        background-color: var(--c-primary);
-    }
+  body {
+    background-color: var(--c-primary);
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.99999px) {
-    body {
-        background-color: var(--c-secondary);
-    }
+  body {
+    background-color: var(--c-secondary);
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.99999px) {
-    body {
-        background-color: var(--c-tertiary);
-    }
+  body {
+    background-color: var(--c-tertiary);
+  }
 }
 
 @media (min-width: 1200px) {
-    body {
-        background-color: var(--c-quaternary);
-    }
+  body {
+    background-color: var(--c-quaternary);
+  }
 }

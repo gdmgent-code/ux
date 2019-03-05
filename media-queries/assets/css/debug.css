@@ -1,65 +1,64 @@
 html[data-debug]:not([data-debug="false"]) body::after,
 html[data-debug]:not([data-debug="false"]) body::before {
-    background-color: rgba(0, 0, 0, .25);
-    border-radius: .25rem;
-    box-shadow: -.25rem .25rem .5rem 0 rgba(0, 0, 0, .50);
-    color: white;
-    content: '';
-    display: block;
-    margin: 1rem;
-    padding: .5rem .75rem;
-    position: fixed;
-    text-transform: uppercase;
-    top: 0;
+  background-color: rgba(0, 0, 0, .25);
+  border-radius: .25rem;
+  box-shadow: -.25rem .25rem .5rem 0 rgba(0, 0, 0, .50);
+  color: white;
+  content: '';
+  display: block;
+  margin: 1rem;
+  padding: .5rem .75rem;
+  position: fixed;
+  text-transform: uppercase;
+  top: 0;
 }
 
 html[data-debug]:not([data-debug="false"]) body::after {
-    right: 0;
+  right: 0;
 }
 
 html[data-debug]:not([data-debug="false"]) body::before {
-    left: 0;
+  left: 0;
 }
 
-
 @media (max-width: 575.99999px) {
-    html[data-debug]:not([data-debug="false"]) body::after {
-        content: "extra small device";
-    }
+  html[data-debug]:not([data-debug="false"]) body::after {
+    content: "extra small device";
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.99999px) {
-    html[data-debug]:not([data-debug="false"]) body::after {
-        content: "small device";
-    }
+  html[data-debug]:not([data-debug="false"]) body::after {
+    content: "small device";
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.99999px) {
-    html[data-debug]:not([data-debug="false"]) body::after {
-        content: "medium device";
-    }
+  html[data-debug]:not([data-debug="false"]) body::after {
+    content: "medium device";
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.99999px) {
-    html[data-debug]:not([data-debug="false"]) body::after {
-        content: "large device";
-    }
+  html[data-debug]:not([data-debug="false"]) body::after {
+    content: "large device";
+  }
 }
 
 @media (min-width: 1200px) {
-    html[data-debug]:not([data-debug="false"]) body::after {
-        content: "extra large device";
-    }
+  html[data-debug]:not([data-debug="false"]) body::after {
+    content: "extra large device";
+  }
 }
 
 @media (orientation: landscape) {
-    html[data-debug]:not([data-debug="false"]) body::before {
-        content: "landscape";
-    }
+  html[data-debug]:not([data-debug="false"]) body::before {
+    content: "landscape";
+  }
 }
 
 @media (orientation: portrait) {
-    html[data-debug]:not([data-debug="false"]) body::before {
-        content: "portrait";
-    }
+  html[data-debug]:not([data-debug="false"]) body::before {
+    content: "portrait";
+  }
 }

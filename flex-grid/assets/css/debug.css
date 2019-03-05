@@ -1,78 +1,78 @@
 html[data-debug]:not([data-debug="false"]) body::after {
-    background-color: rgba(0, 0, 0, .25);
-    border-radius: .25rem;
-    box-shadow: -.25rem .25rem .5rem 0 rgba(0, 0, 0, .50);
-    color: white;
-    content: '';
-    display: block;
-    margin: 1rem;
-    padding: .5rem .75rem;
-    position: fixed;
-    right: 0;
-    text-transform: uppercase;
-    top: 0;
+  background-color: rgba(0, 0, 0, .25);
+  border-radius: .25rem;
+  box-shadow: -.25rem .25rem .5rem 0 rgba(0, 0, 0, .50);
+  color: white;
+  content: '';
+  display: block;
+  margin: 1rem;
+  padding: .5rem .75rem;
+  position: fixed;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
 }
 
 @media (max-width: 575.99999px) {
-    html[data-debug]:not([data-debug="false"]) body::after {
-        content: "extra small device";
-    }
+  html[data-debug]:not([data-debug="false"]) body::after {
+    content: "extra small device";
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.99999px) {
-    html[data-debug]:not([data-debug="false"]) body::after {
-        content: "small device";
-    }
+  html[data-debug]:not([data-debug="false"]) body::after {
+    content: "small device";
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.99999px) {
-    html[data-debug]:not([data-debug="false"]) body::after {
-        content: "medium device";
-    }
+  html[data-debug]:not([data-debug="false"]) body::after {
+    content: "medium device";
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.99999px) {
-    html[data-debug]:not([data-debug="false"]) body::after {
-        content: "large device";
-    }
+  html[data-debug]:not([data-debug="false"]) body::after {
+    content: "large device";
+  }
 }
 
 @media (min-width: 1200px) {
-    html[data-debug]:not([data-debug="false"]) body::after {
-        content: "extra large device";
-    }
+  html[data-debug]:not([data-debug="false"]) body::after {
+    content: "extra large device";
+  }
 }
 
 /** Grid */
 html[data-debug]:not([data-debug="false"]) .container:not([data-debug="false"]) .row:not([data-debug="false"]) [class*="col"] {
-    border: 1px dashed rgba(0, 0, 0, .05);
-    box-sizing: border-box;
-    min-height: 4rem;
-    position: relative;
+  border: 1px dashed rgba(0, 0, 0, .05);
+  box-sizing: border-box;
+  min-height: 4rem;
+  position: relative;
 }
 
 html[data-debug]:not([data-debug="false"]) .container:not([data-debug="false"]) .row:not([data-debug="false"]):nth-child(odd) {
-    background-color: rgba(255, 255, 255, .25);
+  background-color: rgba(255, 255, 255, .25);
 }
 
 html[data-debug]:not([data-debug="false"]) .container:not([data-debug="false"]) .row:not([data-debug="false"]) [class*="col"]::before {
-    background-color: rgba(0, 0, 0, .25);
-    border-radius: .25rem;
-    bottom: 0;
-    color: white;
-    content: attr(class);
-    font-size: .75rem;
-    left: 0;
-    margin: calc(var(--gutter) / 2);
-    min-height: 1rem;
-    padding: .25rem .5rem;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    text-shadow: 0 0 1px black, 1px 1px 1px black;
-    top: 0;
+  background-color: rgba(0, 0, 0, .25);
+  border-radius: .25rem;
+  bottom: 0;
+  color: white;
+  content: attr(class);
+  font-size: .75rem;
+  left: 0;
+  margin: calc(var(--gutter) / 2);
+  min-height: 1rem;
+  padding: .25rem .5rem;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-shadow: 0 0 1px black, 1px 1px 1px black;
+  top: 0;
 }
 
 html[data-debug]:not([data-debug="false"]) .container.container--grid-16:not([data-debug="false"]) .row:not([data-debug="false"]) [class*="col"]::before {
-    content: '16 grid: 'attr(class);
+  content: '16 grid: 'attr(class);
 }
