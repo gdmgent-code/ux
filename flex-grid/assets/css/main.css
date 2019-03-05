@@ -1,20 +1,7 @@
 @import url('variables.css');
 @import url('components/grid.css');
 
-html[data-debug]:not([data-debug="false"]) body::after {
-    background-color: rgba(0, 0, 0, .25);
-    border-radius: .25rem;
-    box-shadow: -.25rem .25rem .5rem 0 rgba(0, 0, 0, .50);
-    color: white;
-    content: '';
-    display: block;
-    margin: 1rem;
-    padding: .5rem .75rem;
-    position: fixed;
-    right: 0;
-    text-transform: uppercase;
-    top: 0;
-}
+@import url('debug.css');
 
 html {
     height: 100%;
@@ -47,50 +34,30 @@ h1 {
 }
 
 @media (max-width: 575.99999px) {
-    html[data-debug]:not([data-debug="false"]) body::after {
-        content: "extra small device";
-    }
-
     body {
         background-color: var(--c-quinary);
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.99999px) {
-    html[data-debug]:not([data-debug="false"]) body::after {
-        content: "small device";
-    }
-
     body {
         background-color: var(--c-primary);
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.99999px) {
-    html[data-debug]:not([data-debug="false"]) body::after {
-        content: "medium device";
-    }
-
     body {
         background-color: var(--c-secondary);
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199.99999px) {
-    html[data-debug]:not([data-debug="false"]) body::after {
-        content: "large device";
-    }
-
     body {
         background-color: var(--c-tertiary);
     }
 }
 
 @media (min-width: 1200px) {
-    html[data-debug]:not([data-debug="false"]) body::after {
-        content: "extra large device";
-    }
-
     body {
         background-color: var(--c-quaternary);
     }
