@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 :root {
-  /** Colors */
+  /**
+   * Colour palette
+   */
   --c-primary: #000;
   --c-secondary: #707070;
 
-  /** Fonts */
-  --f-body: 'Poppins', sans-serif;
-  --f-heading: 'Poppins', sans-serif;
-  --f-secondary: Arial, Helvetica, sans-serif;
+  /**
+   * Layout
+   */
+  --l-gutter: 1.875rem;
 
-  /** Grid */
-  --gutter: 1.875rem;
+  /**
+   * Typography
+   */
+  --t-primary: 'Poppins', sans-serif;
+  --t-secondary: Arial, Helvetica, sans-serif;
+
+  --t-headline: var(--t-primary);
+  --t-subtitle: var(--t-secondary);
+  --t-body: var(--t-primary);
 }

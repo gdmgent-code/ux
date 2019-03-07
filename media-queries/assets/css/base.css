@@ -1,0 +1,28 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--c-ahs-grijs-licht);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--t-body);
+  height: inherit;
+  justify-content: center;
+  margin: 0;
+}
+
+h1 {
+  --c-shadow: var(--c-ahs-grijs-donker-alpha);
+  color: #FFF;
+  font-family: var(--t-headline);
+  text-align: center;
+  text-shadow:
+    1px 1px 1px var(--c-shadow),
+    1px 2px 1px var(--c-shadow),
+    1px 3px 1px var(--c-shadow),
+    1px 4px 1px var(--c-shadow),
+    1px 5px 1px var(--c-shadow),
+    1px 6px 1px var(--c-shadow),
+    1px 7px 9px hsla(0, 0%, 0%, .5);
+}

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kredietkaart - Formulieren</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Kredietkaart &ndash; Formulieren</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="assets/js/app.js"></script>
 </head>
+
 <body>
     <div class="container">
         <form class="form-credit-card" action="https://httpbin.org/post" method="POST">
@@ -16,11 +19,13 @@
             <div class="credit-card">
                 <div class="credit-card__logos">
                     <i class="fab fa-cc-mastercard"></i>
-                    <div>ArteCredit</div>
+                    <div><b>Artevelde</b>Credit</div>
                 </div>
                 <div class="credit-card__cc-number">
                     <label for="cc-number">Nummer</label>
-                    <input class="text-emboss" type="text" maxlength="19" pattern="^[0-9]{4}(\s[0-9]{4}){3}$" placeholder="0000 0000 0000 0000" required name="cc-number" autocomplete="cc-number" id="cc-number" data-cc-number>
+                    <input class="text-emboss" type="text" maxlength="19" pattern="^[0-9]{4}(\s[0-9]{4}){3}$"
+                        placeholder="0000 0000 0000 0000" required name="cc-number" autocomplete="cc-number" id="cc-number"
+                        data-cc-number>
                 </div>
                 <div class="credit-card__details">
                     <div class="credit-card__issue">
@@ -30,15 +35,18 @@
                     <div class="credit-card__cc-exp">
                         <label for="cc-exp-month">Geldig tot en met</label>
                         <span class="text-emboss">
-                            <input class="text-emboss" type="text" maxlength="2" placeholder="MM" required id="cc-exp-month" name="cc-exp-month" autocomplete="cc-exp-month">/<input class="text-emboss" type="text" maxlength="2" placeholder="YY" required name="cc-exp-year" autocomplete="cc-exp-year">
+                            <input class="text-emboss" type="text" maxlength="2" placeholder="MM" required id="cc-exp-month"
+                                name="cc-exp-month" autocomplete="cc-exp-month">/<input class="text-emboss" type="text"
+                                maxlength="2" placeholder="YY" required name="cc-exp-year" autocomplete="cc-exp-year">
                         </span>
                     </div>
                 </div>
                 <div class="credit-card__cc-name">
                     <label for="cc-name">Kaarthouder</label>
-                    <input class="text-emboss" type="text" placeholder="Voornaam Familienaam" required id="card-holder" name="cc-name" autocomplete="cc-name">
+                    <input class="text-emboss" type="text" maxlength="34" placeholder="Voornaam Familienaam" required id="card-holder"
+                        name="cc-name" autocomplete="cc-name">
                 </div>
-                
+
             </div>
             <div class="credit-card credit-card--back">
                 <div class="credit-card__cc-cvc">
@@ -50,4 +58,5 @@
         </form>
     </div>
 </body>
+
 </html>

@@ -1,11 +1,10 @@
 .container {
   margin: 0 auto;
-  max-width: calc(1200px - var(--gutter));
-  padding: calc(var(--gutter) / 2);
+  max-width: calc(1200px - var(--l-gutter));
+  padding: calc(var(--l-gutter) / 2);
 }
 
 .container.container--grid-16 {
-  /* grid met 16 kolommen */
   --cols: 16;
 }
 
@@ -51,7 +50,7 @@
 .container.container--grid-16 .col-15,
 .container.container--grid-16 .col-16 {
   box-sizing: border-box;
-  padding: calc(var(--gutter) / 2);
+  padding: calc(var(--l-gutter) / 2);
 }
 
 .no-gutter {

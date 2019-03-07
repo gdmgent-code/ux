@@ -1,34 +1,6 @@
-@import url('variables.css');
-@import url('debug.css');
-
-html {
-  height: 100%;
-}
-
-body {
-  background-color: var(--c-ahs-grijs-licht);
-  display: flex;
-  flex-direction: column;
-  font-family: var(--f-body);
-  height: inherit;
-  justify-content: center;
-  margin: 0;
-}
-
-h1 {
-  --c-shadow: var(--c-ahs-grijs-donker-alpha);
-  color: #FFF;
-  font-family: var(--f-heading);
-  text-align: center;
-  text-shadow:
-    1px 1px 1px var(--c-shadow),
-    1px 2px 1px var(--c-shadow),
-    1px 3px 1px var(--c-shadow),
-    1px 4px 1px var(--c-shadow),
-    1px 5px 1px var(--c-shadow),
-    1px 6px 1px var(--c-shadow),
-    1px 7px 9px hsla(0, 0%, 0%, .5);
-}
+@import 'variables.css';
+@import 'base.css';
+@import 'debug.css';
 
 @media (max-width: 575.99999px) {
   body {

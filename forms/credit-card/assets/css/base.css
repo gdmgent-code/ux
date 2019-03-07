@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  font-family: var(--t-body)
+}
+
+h1,
+h2 {
+  font-family: var(--t-headline);
+}

@@ -1,20 +1,6 @@
 @import 'variables.css';
+@import 'base.css';
 @import 'components/grid.css';
-
-html {
-  height: 100%;
-}
-
-body {
-  font-family: var(--f-body);
-  font-weight: 500;
-  height: inherit;
-  margin: 0;
-}
-
-.container {
-  padding: 0;
-}
 
 .logo {
   font-weight: normal;
@@ -45,7 +31,7 @@ body {
 .card-recipe h1::before {
   color: var(--c-secondary);
   display: block;
-  font-family: var(--f-secondary);
+  font-family: var(--t-subtitle);
   font-size: .625em;
   letter-spacing: 0.12em;
   padding-bottom: .25em;

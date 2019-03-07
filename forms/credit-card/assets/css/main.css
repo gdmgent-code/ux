@@ -1,109 +1,138 @@
-@import url('fonts.css');
 @import url('variables.css');
+@import url('base.css');
 
 .container {
-    margin: auto;
-    max-width: 30rem;
+  margin: auto;
+  max-width: 30rem;
 }
+
 .credit-card {
-    background-color: var(--color-primary-base);
-    border-radius: 1rem;
-    box-shadow: 1px 3px 3px var(--color-primary-darker);
-    height: 12rem;
-    margin-bottom: 1rem;
-    padding: 1rem 1.5rem;
-    width: 19rem;
+  --c-plastic: #888;
+  background-color: var(--c-tertiary);
+  border-radius: .8125rem;
+  box-shadow:
+    1px 1px 1px var(--c-plastic),
+    1px 2px 1px var(--c-plastic),
+    0 0 1px var(--c-plastic);
+  height: 11.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  width: 19rem;
 }
+
 .credit-card.credit-card--back {
-    background: var(--color-primary-light) 0 1em repeat-x url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100" height="50"><polygon points="0,0 100,0 100,50 0,50" style="fill:hsl(20, 85%, 10%)" /></svg>'); 
+  background: var(--c-quinary) 0 1em repeat-x url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100" height="50"><polygon points="0,0 100,0 100,50 0,50" style="fill:hsl(20, 85%, 10%)" /></svg>');
 }
+
 .credit-card input {
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid var(--color-primary-dark);
-    font-size: 1rem;
-    text-transform: uppercase;
-    width: 100%;
+  background-color: transparent;
+  border-bottom: 2px solid var(--c-tertiary);
+  border: none;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  width: 100%;
 }
+
 .credit-card input:invalid {
-    border: none;
-    border-bottom: 2px solid rgb(128, 0, 38);
+  border: none;
+  border-bottom: 2px solid var(--c-quaternary);
 }
+
 .credit-card__cc-cvc {
-    margin-top: 3em;
-    margin-right: 4.5em;
+  margin-top: 3em;
+  margin-right: 4.5em;
 }
+
 .credit-card__cc-cvc,
 .credit-card__cc-cvc input {
-    text-align: right;
+  text-align: right;
 }
+
 .credit-card__details {
-    display: flex;
-    justify-content: space-between;
-    padding-top: .5rem;
+  display: flex;
+  justify-content: space-between;
+  padding-top: .5rem;
 }
+
 .credit-card__issue input {
-    width: 1rem;
+  width: 1rem;
 }
+
 .credit-card__cc-exp input {
-    width: 1.5rem;
+  width: 1.5rem;
 }
+
 .credit-card label {
-    color: var(--color-primary-darker);
-    font-family: var(--font-primary);
-    font-size: .75rem;
-    font-weight: bold;
-    padding-top: .5rem;
-    width: 100%;
+  color: var(--c-primary-darker);
+  font-family: var(--font-primary);
+  font-size: .75rem;
+  font-weight: bold;
+  padding-top: .5rem;
+  width: 100%;
 }
+
 .credit-card__cc-number input {
-    font-size: 1.75rem;
+  font-size: 1.75rem;
 }
+
 .credit-card__cc-number label,
 .credit-card__cc-name label {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
+
 .credit-card__issue label {
-    font-size: inherit;
+  font-size: inherit;
 }
+
 .credit-card__logos {
-    display: flex;
-    font-size: 2em;
-    justify-content: space-between;
+  display: flex;
+  font-size: 2em;
+  justify-content: space-between;
 }
+
 .credit-card__logos .fab {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
+
 .form-credit-card {
-    position: relative;
-    background-color: #EEE;
-    padding: 1rem;
+  position: relative;
+  background-color: #EEE;
+  padding: 1rem;
 }
+
 .form-credit-card__btn-send {
-    background-color: transparent;
-    background-color: var(--color-secondary-base);
-    border-radius: .25em;
-    border: 2px solid var(--color-secondary-darker);
-    bottom: 1rem;
-    padding: .5em 1em;
-    right: 1.5rem;
+  background-color: var(--c-secondary);
+  border-radius: .25em;
+  border: 2px solid var(--c-secondary);
+  bottom: 1rem;
+  padding: .5em 1em;
+  right: 1.5rem;
 }
+
 .form-credit-card__btn-send:hover {
-    background-color: var(--color-secondary-darker);
-    color: #FFF;
-    cursor: pointer;
+  background-color: transparent;
+  color: var(--c-secondary);
+  cursor: pointer;
 }
+
 label.text-emboss,
 .text-emboss {
-    color: rgba(0, 0, 0, .75);
-    font-family: var(--font-monospace);
-    font-size: 1.25rem;
-    text-shadow:
-        0 0 1px #FFF,
-        -2px -2px 4px var(--color-primary-lighter),
-        -1px 0 1px var(--color-primary-darker),
-        -1px -1px 1px var(--color-primary-base),
-        2px  2px 2px var(--color-primary-darker),
-        1px  1px 1px var(--color-primary-darkest);
+  --c-embossed: 190;
+  --c-embossed-lighter: hsl(var(--c-embossed), 100%, 90%);
+  --c-embossed-base: hsl(var(--c-embossed), 100%, 60%);
+  --c-embossed-dark: hsl(var(--c-embossed), 100%, 40%);
+  --c-embossed-darker: hsl(var(--c-embossed), 100%, 30%);
+  --c-embossed-darkest: hsl(var(--c-embossed), 100%, 10%);
+  color: rgba(0, 0, 0, .75);
+  font-family: var(--t-monospace);
+  font-size: 1.25rem;
+  text-shadow:
+    0 0 1px #FFF,
+    -2px -2px 4px var(--c-embossed-lighter),
+    -1px 0 1px var(--c-embossed-darker),
+    -1px -1px 1px var(--c-embossed-base),
+    2px 2px 2px var(--c-embossed-darker),
+    1px 1px 1px var(--c-embossed-darkest);
 }

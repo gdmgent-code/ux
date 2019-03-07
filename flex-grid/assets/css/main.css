@@ -1,36 +1,9 @@
 @import url('variables.css');
+@import url('base.css');
 @import url('components/grid.css');
 @import url('debug.css');
 
-html {
-  height: 100%;
-}
 
-body {
-  background-color: var(--c-ahs-grijs-licht);
-  font-family: var(--f-body);
-  height: inherit;
-  margin: 0;
-}
-
-h1 {
-  --c-shadow: var(--c-ahs-grijs-donker-alpha);
-  color: white;
-  font-family: var(--f-heading);
-  text-shadow:
-    1px 1px 1px var(--c-shadow),
-    1px 2px 1px var(--c-shadow),
-    1px 3px 1px var(--c-shadow),
-    1px 4px 1px var(--c-shadow),
-    1px 5px 1px var(--c-shadow),
-    1px 6px 1px var(--c-shadow),
-    1px 7px 9px hsla(0, 0%, 0%, .5);
-}
-
-::selection {
-  background-color: #FF0;
-  color: black;
-}
 
 @media (max-width: 575.99999px) {
   body {

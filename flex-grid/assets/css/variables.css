@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i');
 
 :root {
-  /** Colors */
+  /**
+   * Colour palette
+   */
   --c-ahs-blauw: hsl(190, 100%, 40%);
   --c-ahs-fuchsia: hsl(325, 100%, 40%);
   --c-ahs-grijs-donker:hsl(0, 0%, 47%);
@@ -17,10 +19,18 @@
   --c-quaternary: var(--c-ahs-fuchsia);
   --c-quinary: var(--c-ahs-grijs-licht);
 
-  /** Fonts */
-  --f-body: 'Source Sans Pro', sans-serif;
-  --f-heading: 'Source Sans Pro', sans-serif;
+  /**
+   * Layout
+   */
+   --l-gutter: 1rem;
 
-  /** Grid */
-  --gutter: 1rem;
+  /**
+   * Typography
+   */
+   --t-primary: 'Source Sans Pro', sans-serif;
+   --t-secondary: var(--t-primary);
+ 
+   --t-headline: var(--t-primary);
+   --t-subtitle: var(--t-primary);
+   --t-body: var(--t-secondary);
 }
