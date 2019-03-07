@@ -1,5 +1,6 @@
-window.onload = function() {
+window.onload = function () {
     creditCardNumber()
+    creditCardText()
 }
 
 function creditCardNumber() {
@@ -7,6 +8,7 @@ function creditCardNumber() {
     const ccNumber = document.querySelectorAll('[data-cc-number]')
     ccNumber.forEach(element => element.addEventListener('input', eventHandler))
     const regex = /([^0-9])*/g
+
     function eventHandler(event) {
         let value = event.target.value.replace(regex, '')
         let spaces = Math.floor(value.length / 4)
@@ -19,6 +21,18 @@ function creditCardNumber() {
                 value = value.slice(0, index) + ' ' + value.slice(index, value.length)
             }
         }
+        event.target.value = value
+    }
+}
+
+function creditCardText() {
+    console.info('data-cc-text script active')
+    const ccNumber = document.querySelectorAll('[data-cc-text]')
+    ccNumber.forEach(element => element.addEventListener('input', eventHandler))
+    const regex = /([^a-zA-Z. ])*/g
+
+    function eventHandler(event) {
+        let value = event.target.value.replace(regex, '')
         event.target.value = value
     }
 }
