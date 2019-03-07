@@ -1,12 +1,15 @@
 .colour-blue {
   --color: var(--colour-blue);
 }
+
 .colour-green {
   --color: var(--colour-green);
 }
+
 .colour-red {
   --color: var(--colour-red);
 }
+
 .colour-yellow {
   --color: var(--colour-yellow);
 }

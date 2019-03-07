@@ -20,9 +20,11 @@
   flex: 0 1 100%;
   padding: 0 var(--unit);
 }
+
 .col-4 {
   flex-basis: calc(100% * 4 / var(--cols, 12));
 }
+
 .col-8 {
   flex-basis: calc(100% * 8 / var(--cols, 12));
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <title>Test</title>
+    <style>
+        .credit-card {
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mx-auto p-1">
+        <h1 class="rounded text-blue-lighter p-3 bg-blue shadow-lg">Olivier Parent</h1>
+        <form action="https://httpbin.org/post" method="POST" class="bg-red p-5 mt-2 hover:bg-green">
+            <div class="row text-white">
+                <input type="text" name="username" placeholder="gebruikersnaam" class="rounded p-2">
+                <i class="fas fa-code"></i>
+            </div>
+            <button type="submit" class="bg-blue mt-1 p-3 hover:bg-pink rounded">Verzenden</button>
+        </form>
+        <form action="https://httpbin.org/get" method="GET" class="bg-red p-5 mt-2 hover:bg-green">
+            <div class="row text-white">
+                <input type="text" name="username" placeholder="gebruikersnaam" class="rounded p-2">
+                <i class="fas fa-code"></i>
+            </div>
+            <button type="submit" class="bg-blue mt-1 p-3 hover:bg-pink rounded">Verzenden</button>
+        </form>
+    </div>
+    <div class="credit-card bg-grey p-3">
+        <img src="" alt="">
+        ArteCredit
+        <form action="">
+            <div>
+                <input type="text" maxlength="4" minlength="4" placeholder="XXXX">
+                <input type="text" maxlength="4" minlength="4" placeholder="XXXX">
+                <input type="text" maxlength="4" minlength="4" placeholder="XXXX">
+                <input type="text" maxlength="4" minlength="4" placeholder="XXXX">
+            </div>
+            <div>
+                <input type="text" placholder>
+            </div>
+            <div>
+                <input type="text" placeholder="MM">/<input type="text" placeholder="YY">
+            </div>
+            <div>
+                <input type="text" placeholder="voornaam">
+                <input type="text" placeholder="familienaam">
+            </div>
+            <div>
+                <button>Verzenden</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -4,6 +4,7 @@
   margin: 0 7px;
   text-transform: uppercase;
 }
+
 .badge-white {
   background-color: var(--colour-white);
   color: var(--color, inherit);

@@ -16,8 +16,8 @@ h1 {
     font-family: var(--f-head);
 }
 
-.example {
-}
+.example {}
+
 .worse {
     color: red;
 }
