@@ -1,16 +1,6 @@
 @import url('https://necolas.github.io/normalize.css/latest/normalize.css');
-@import url('fonts.css');
-@import url('variables.css');
-
-:root {
-    height: 100%;
-}
-
-body {
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
+@import 'variables.css';
+@import 'base.css';
 
 body > section {
     margin: 5rem auto;

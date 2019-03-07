@@ -1,0 +1,12 @@
+:root {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(to bottom, var(--c-primary) 0%, var(--c-primary) 20%, var(--c-secondary) 20%, var(--c-secondary) 40%, var(--c-tertiary) 40%, var(--c-tertiary) 60%, var(--c-quaternary) 60%, var(--c-quaternary) 80%, var(--c-quinary) 80%, var(--c-quinary) 100%);
+  background-repeat: no-repeat;
+  background-size: 2rem 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}

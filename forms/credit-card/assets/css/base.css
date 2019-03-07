@@ -1,6 +1,6 @@
 body {
+  font-family: var(--t-body);
   margin: 0;
-  font-family: var(--t-body)
 }
 
 h1,

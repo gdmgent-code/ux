@@ -1,19 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i');
+
 :root {
-    --colour-primary: 85;
+  /**
+   * Colour palette
+   */
+  --c-ahs-blauw: hsl(190, 100%, 40%);
+  --c-ahs-fuchsia: hsl(325, 100%, 40%);
+  --c-ahs-grijs-donker:hsl(0, 0%, 47%);
+  --c-ahs-grijs-donker-alpha:hsla(0, 0%, 47%, .2);
+  --c-ahs-grijs-licht: hsl(0, 0%, 87%);
+  --c-ahs-grijs-midden: hsl(0, 0%, 67%);
+  --c-ahs-groen: hsl(65, 100%, 40%);
+  --c-ahs-oranje: hsl(39, 100%, 47%);
 
-    --colour-tertiary: 160;
-    --colour-primary-lightest: hsl(var(--colour-primary), 100%, 100%);
-    --colour-primary-lighter: hsl(var(--colour-primary), 100%, 90%);
-    --colour-primary-light: hsl(var(--colour-primary), 100%, 80%);
-    --colour-primary-base: hsl(var(--colour-primary), 100%, 60%);
-    --colour-primary-dark: hsl(var(--colour-primary), 100%, 40%);
-    --colour-primary-darker: hsl(var(--colour-primary), 100%, 30%);
-    --colour-primary-darkest: hsl(var(--colour-primary), 100%, 10%);
+  --c-primary: var(--c-ahs-oranje);
+  --c-secondary: var(--c-ahs-groen);
+  --c-tertiary: var(--c-ahs-blauw);
+  --c-quaternary: var(--c-ahs-fuchsia);
+  --c-quinary: var(--c-ahs-grijs-midden);
 
-    --colour-secondary: 260;
-    --colour-secondary-base: hsl(var(--colour-secondary), 100%, 60%);
-    --colour-secondary-darker: hsl(var(--colour-secondary), 100%, 30%);
+  /**
+   * Layout
+   */
+   --l-gutter: 1rem;
 
-    --font-primary: Arial, sans-serif;
-    --font-monospace: 'Share Tech Mono', monospace;
+  /**
+   * Typography
+   */
+   --t-primary: 'Source Sans Pro', sans-serif;
+   --t-secondary: var(--t-primary);
+ 
+   --t-headline: var(--t-primary);
+   --t-subtitle: var(--t-primary);
+   --t-body: var(--t-secondary);
 }
