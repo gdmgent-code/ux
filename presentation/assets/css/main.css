@@ -2,7 +2,7 @@
 @import 'variables.css';
 @import 'base.css';
 
-body > section {
+body > sectionp {
     margin: 5rem auto;
     max-width: 90rem;
     position: relative;
@@ -56,3 +56,7 @@ section:target~section {
     opacity: 0;
     /* transform: rotate(-90deg); */
 }
+
+.o-presentation {
+}
+

@@ -1,0 +1,36 @@
+@import url('variables.css');
+@import url('base.css');
+@import url('components/grid.css');
+@import url('debug.css');
+
+.container {  
+  counter-reset: block-number;
+}
+
+.block {
+  --height: 4rem;
+  align-items: center;
+  color: white;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  min-height: var(--height);
+}
+
+.block::after {
+  content: counter(block-number);
+  counter-increment: block-number;
+  display: block;
+}
+
+.block.-double-height {
+  min-height: calc(var(--height) * 2 + var(--l-gutter));
+}
+
+.block.-swatch-a {
+  background-color: var(--c-tertiary);
+}
+
+.block.-swatch-b {
+  background-color: var(--c-quaternary);
+}

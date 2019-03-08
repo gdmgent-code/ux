@@ -4,7 +4,7 @@
   padding: calc(var(--l-gutter) / 2);
 }
 
-.container.container--grid-16 {
+.container.-grid-16 {
   --cols: 16;
 }
 
@@ -25,7 +25,7 @@
   flex-wrap: wrap;
 }
 
-.container.container--grid-16 .row {
+.container.-grid-16 .row {
   --col-13: calc(100% * 13 / var(--cols));
   --col-14: calc(100% * 14 / var(--cols));
   --col-15: calc(100% * 15 / var(--cols));
@@ -45,10 +45,10 @@
 .col-10,
 .col-11,
 .col-12,
-.container.container--grid-16 .col-13,
-.container.container--grid-16 .col-14,
-.container.container--grid-16 .col-15,
-.container.container--grid-16 .col-16 {
+.container.-grid-16 .col-13,
+.container.-grid-16 .col-14,
+.container.-grid-16 .col-15,
+.container.-grid-16 .col-16 {
   box-sizing: border-box;
   padding: calc(var(--l-gutter) / 2);
 }
@@ -110,19 +110,19 @@
   flex: 0 0 var(--col-12);
 }
 
-.container.container--grid-16 .col-13 {
+.container.-grid-16 .col-13 {
   flex: 0 0 var(--col-13);
 }
 
-.container.container--grid-16 .col-14 {
+.container.-grid-16 .col-14 {
   flex: 0 0 var(--col-14);
 }
 
-.container.container--grid-16 .col-15 {
+.container.-grid-16 .col-15 {
   flex: 0 0 var(--col-15);
 }
 
-.container.container--grid-16 .col-16 {
+.container.-grid-16 .col-16 {
   flex: 0 0 var(--col-16);
 }
 
@@ -174,19 +174,19 @@
   margin-left: var(--col-12);
 }
 
-.container.container--grid-16 .offset-13 {
+.container.-grid-16 .offset-13 {
   margin-left: var(--col-13);
 }
 
-.container.container--grid-16 .offset-14 {
+.container.-grid-16 .offset-14 {
   margin-left: var(--col-14);
 }
 
-.container.container--grid-16 .offset-15 {
+.container.-grid-16 .offset-15 {
   margin-left: var(--col-15);
 }
 
-.container.container--grid-16 .offset-16 {
+.container.-grid-16 .offset-16 {
   margin-left: var(--col-16);
 }
 
@@ -239,19 +239,19 @@
     flex: 0 0 var(--col-12);
   }
 
-  .container.container--grid-16 .col-sm-13 {
+  .container.-grid-16 .col-sm-13 {
     flex: 0 0 var(--col-13);
   }
 
-  .container.container--grid-16 .col-sm-14 {
+  .container.-grid-16 .col-sm-14 {
     flex: 0 0 var(--col-14);
   }
 
-  .container.container--grid-16 .col-sm-15 {
+  .container.-grid-16 .col-sm-15 {
     flex: 0 0 var(--col-15);
   }
 
-  .container.container--grid-16 .col-sm-16 {
+  .container.-grid-16 .col-sm-16 {
     flex: 0 0 var(--col-16);
   }
 
@@ -303,19 +303,19 @@
     margin-left: var(--col-12);
   }
 
-  .container.container--grid-16 .offset-sm-13 {
+  .container.-grid-16 .offset-sm-13 {
     margin-left: var(--col-13);
   }
 
-  .container.container--grid-16 .offset-sm-14 {
+  .container.-grid-16 .offset-sm-14 {
     margin-left: var(--col-14);
   }
 
-  .container.container--grid-16 .offset-sm-15 {
+  .container.-grid-16 .offset-sm-15 {
     margin-left: var(--col-15);
   }
 
-  .container.container--grid-16 .offset-sm-16 {
+  .container.-grid-16 .offset-sm-16 {
     margin-left: var(--col-16);
   }
 }
@@ -369,19 +369,19 @@
     flex: 0 0 var(--col-12);
   }
 
-  .container.container--grid-16 .col-md-13 {
+  .container.-grid-16 .col-md-13 {
     flex: 0 0 var(--col-13);
   }
 
-  .container.container--grid-16 .col-md-14 {
+  .container.-grid-16 .col-md-14 {
     flex: 0 0 var(--col-14);
   }
 
-  .container.container--grid-16 .col-md-15 {
+  .container.-grid-16 .col-md-15 {
     flex: 0 0 var(--col-15);
   }
 
-  .container.container--grid-16 .col-md-16 {
+  .container.-grid-16 .col-md-16 {
     flex: 0 0 var(--col-16);
   }
 
@@ -433,19 +433,19 @@
     margin-left: var(--col-12);
   }
 
-  .container.container--grid-16 .offset-md-13 {
+  .container.-grid-16 .offset-md-13 {
     margin-left: var(--col-13);
   }
 
-  .container.container--grid-16 .offset-md-14 {
+  .container.-grid-16 .offset-md-14 {
     margin-left: var(--col-14);
   }
 
-  .container.container--grid-16 .offset-md-15 {
+  .container.-grid-16 .offset-md-15 {
     margin-left: var(--col-15);
   }
 
-  .container.container--grid-16 .offset-md-16 {
+  .container.-grid-16 .offset-md-16 {
     margin-left: var(--col-16);
   }
 }
@@ -499,19 +499,19 @@
     flex: 0 0 var(--col-12);
   }
 
-  .container.container--grid-16 .col-lg-13 {
+  .container.-grid-16 .col-lg-13 {
     flex: 0 0 var(--col-13);
   }
 
-  .container.container--grid-16 .col-lg-14 {
+  .container.-grid-16 .col-lg-14 {
     flex: 0 0 var(--col-14);
   }
 
-  .container.container--grid-16 .col-lg-15 {
+  .container.-grid-16 .col-lg-15 {
     flex: 0 0 var(--col-15);
   }
 
-  .container.container--grid-16 .col-lg-16 {
+  .container.-grid-16 .col-lg-16 {
     flex: 0 0 var(--col-16);
   }
 
@@ -563,19 +563,19 @@
     margin-left: var(--col-12);
   }
 
-  .container.container--grid-16 .offset-lg-13 {
+  .container.-grid-16 .offset-lg-13 {
     margin-left: var(--col-13);
   }
 
-  .container.container--grid-16 .offset-lg-14 {
+  .container.-grid-16 .offset-lg-14 {
     margin-left: var(--col-14);
   }
 
-  .container.container--grid-16 .offset-lg-15 {
+  .container.-grid-16 .offset-lg-15 {
     margin-left: var(--col-15);
   }
 
-  .container.container--grid-16 .offset-lg-16 {
+  .container.-grid-16 .offset-lg-16 {
     margin-left: var(--col-16);
   }
 }
@@ -630,19 +630,19 @@
     flex: 0 0 var(--col-12);
   }
 
-  .container.container--grid-16 .col-xl-13 {
+  .container.-grid-16 .col-xl-13 {
     flex: 0 0 var(--col-13);
   }
 
-  .container.container--grid-16 .col-xl-14 {
+  .container.-grid-16 .col-xl-14 {
     flex: 0 0 var(--col-14);
   }
 
-  .container.container--grid-16 .col-xl-15 {
+  .container.-grid-16 .col-xl-15 {
     flex: 0 0 var(--col-15);
   }
 
-  .container.container--grid-16 .col-xl-16 {
+  .container.-grid-16 .col-xl-16 {
     flex: 0 0 var(--col-16);
   }
 
@@ -694,19 +694,19 @@
     margin-left: var(--col-12);
   }
 
-  .container.container--grid-16 .offset-xl-13 {
+  .container.-grid-16 .offset-xl-13 {
     margin-left: var(--col-13);
   }
 
-  .container.container--grid-16 .offset-xl-14 {
+  .container.-grid-16 .offset-xl-14 {
     margin-left: var(--col-14);
   }
 
-  .container.container--grid-16 .offset-xl-15 {
+  .container.-grid-16 .offset-xl-15 {
     margin-left: var(--col-15);
   }
 
-  .container.container--grid-16 .offset-xl-16 {
+  .container.-grid-16 .offset-xl-16 {
     margin-left: var(--col-16);
   }
 }
