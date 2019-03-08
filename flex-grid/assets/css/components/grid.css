@@ -189,6 +189,7 @@
   margin-left: var(--col-16);
 }
 
+/** Small Device and up */
 @media (min-width: 576px) {
   .col-sm-1 {
     flex: 0 0 var(--col-01);
@@ -319,6 +320,7 @@
   }
 }
 
+/** Medium Device and up */
 @media (min-width: 768px) {
   .col-md-1 {
     flex: 0 0 var(--col-01);
@@ -449,6 +451,7 @@
   }
 }
 
+/** Large Device and up */
 @media (min-width: 992px) {
   .col-lg-1 {
     flex: 0 0 var(--col-01);
@@ -579,7 +582,7 @@
   }
 }
 
-/**/
+/** Extra Large Device and up */
 @media (min-width: 1200px) {
   .col-xl-1 {
     flex: 0 0 var(--col-01);

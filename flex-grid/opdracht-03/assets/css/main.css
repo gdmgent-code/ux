@@ -3,28 +3,41 @@
 @import url('components/grid.css');
 @import url('debug.css');
 
-.container {  
+.container {
   counter-reset: block-number;
 }
 
 .block {
-  --height: 4rem;
+  --height-01: 4.375rem;
+  --height-02: calc(var(--height-01) * 1.5);
+  --height-03: calc(var(--height-01) * 1.7);
+  --height-04: calc(var(--height-01) * 2.5);
+  --height-05: calc(var(--height-01) * 3 + var(--l-gutter));
   align-items: center;
   color: white;
   display: flex;
   height: 100%;
   justify-content: center;
-  min-height: var(--height);
+  min-height: var(--height-01);
 }
 
 .block::after {
   content: counter(block-number);
   counter-increment: block-number;
   display: block;
+  font-size: 1.25rem;
 }
 
-.block.-double-height {
-  min-height: calc(var(--height) * 2 + var(--l-gutter));
+.block.-height-2 {
+  min-height: var(--height-02);
+}
+
+.block.-height-3 {
+  min-height: var(--height-03);
+}
+
+.block.-height-5 {
+  min-height: var(--height-05);
 }
 
 .block.-swatch-a {
@@ -33,4 +46,30 @@
 
 .block.-swatch-b {
   background-color: var(--c-quaternary);
+}
+
+/** Small Device and up */
+@media (min-width: 576px) {
+  .block.-height-sm-3 {
+    min-height: var(--height-03);
+  }
+
+  .block.-height-sm-4 {
+    min-height: var(--height-04);
+  }
+
+  .block.-height-sm-5 {
+    min-height: var(--height-05);
+  }
+}
+
+/** Medium Device and up */
+@media (min-width: 768px) {
+  .block.-height-md-2 {
+    min-height: var(--height-02);
+  }
+
+  .block.-height-md-4 {
+    min-height: var(--height-04);
+  }
 }
