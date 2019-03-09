@@ -6,8 +6,8 @@
    */
   --c-ahs-blauw: hsl(190, 100%, 40%);
   --c-ahs-fuchsia: hsl(325, 100%, 40%);
-  --c-ahs-grijs-donker:hsl(0, 0%, 47%);
-  --c-ahs-grijs-donker-alpha:hsla(0, 0%, 47%, .2);
+  --c-ahs-grijs-donker: hsl(0, 0%, 47%);
+  --c-ahs-grijs-donker-alpha: hsla(0, 0%, 47%, .2);
   --c-ahs-grijs-licht: hsl(0, 0%, 87%);
   --c-ahs-grijs-midden: hsl(0, 0%, 67%);
   --c-ahs-groen: hsl(65, 100%, 40%);
@@ -22,15 +22,16 @@
   /**
    * Layout
    */
-   --l-gutter: 1rem;
+  --l-gutter: 1rem;
+  --l-unit: calc(1vw + 1vh);
 
   /**
    * Typography
    */
-   --t-primary: 'Source Sans Pro', sans-serif;
-   --t-secondary: var(--t-primary);
- 
-   --t-headline: var(--t-primary);
-   --t-subtitle: var(--t-primary);
-   --t-body: var(--t-secondary);
+  --t-primary: 'Source Sans Pro', sans-serif;
+  --t-secondary: var(--t-primary);
+
+  --t-headline: var(--t-primary);
+  --t-subtitle: var(--t-primary);
+  --t-body: var(--t-secondary);
 }

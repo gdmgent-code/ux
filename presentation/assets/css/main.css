@@ -2,61 +2,92 @@
 @import 'variables.css';
 @import 'base.css';
 
-body > sectionp {
-    margin: 5rem auto;
-    max-width: 90rem;
-    position: relative;
-}
-section>section {
-    background-color: var(--colour-primary-base);
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 5rem auto 5rem;
-    min-height: calc(100vh - 10rem);
-    padding: 5%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-    /* transform: rotate(90deg); */
-    transform-origin: 0 0;
-    transition: transform 1s, opacity 0.8s;
-}
-section>section+section {
-    background-color: var(--colour-secondary-base);
-}
-section>section>:not(header):not(footer) {
-    background: red;
-    grid-column-start: 1;
-    grid-column-end: 13;
-}
-section:first>section:first {
-    z-index: 0;
+.nav-main {
+  --margin: 1rem;
+  position: fixed;
+  left: calc(var(--l-unit) * 1.5);
+  bottom: 0;
+  z-index: 1;
 }
 
+.slide h1 {
+  color: var(--c-tertiary);
+}
+
+.slide h2 {
+  color: var(--c-primary);
+}
+
+section nav {
+  display: flex;
+  flex-direction: column;
+  left: calc(var(--l-unit) * 1.5);
+  position: absolute;
+  top: 0;
+}
+
+nav a {
+  color: var(--c-quinary);
+  opacity: .25;
+}
+
+section>section {
+  --padding-x: calc((100vw - 100vmin) / 2);
+  background-color: var(--colour-primary-base);
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 10vmin auto 10vmin;
+  min-height: 100vh;
+  padding: 5% var(--padding-x);
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 1s, opacity 0.8s;
+  width: 100%;
+}
+
+section>section+section {
+  background-color: var(--colour-secondary-base);
+}
+
+section>section>:not(header):not(footer) {
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+section:first>section:first {
+  z-index: 0;
+}
 
 section>section header,
 section>section footer {
-    grid-column-start: 1;
-    grid-column-end: 13;
+  grid-column-start: 1;
+  grid-column-end: 13;
 }
 
 section>section footer {
-    grid-row-start: 3;
-    grid-row-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 section:target {
-    /* transform: rotate(0deg); */
-    z-index: 1;
+  /* z-index: 1; */
 }
 
 section:target~section {
-    opacity: 0;
-    /* transform: rotate(-90deg); */
+  opacity: 0;
 }
 
-.o-presentation {
+.o-presentation {}
+
+#slide-001 {
+  /* border: 1px solid red; */
 }
 
+#slide-002 {
+  /* border: 1px solid green; */
+}
+
+#slide-003 {
+  /* border: 1px solid blue; */
+}
