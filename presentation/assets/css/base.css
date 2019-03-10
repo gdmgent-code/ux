@@ -1,6 +1,7 @@
 :root {
   font-family: var(--t-primary);
   font-size: 1.5rem;
+  /* font-size: 3.5vh; */
   height: 100vh;
 }
 
@@ -12,30 +13,33 @@
 body {
   background-attachment: fixed;
   background-image: linear-gradient(to bottom,
-    var(--c-primary) 0%,
-    var(--c-primary) 20%,
-    var(--c-secondary) 20%,
-    var(--c-secondary) 40%,
-    var(--c-tertiary) 40%,
-    var(--c-tertiary) 60%,
-    var(--c-quaternary) 60%,
-    var(--c-quaternary) 80%,
-    var(--c-quinary) 80%,
-    var(--c-quinary) 100%);
+    var(--c-primary) 0vh,
+    var(--c-primary) 20vh,
+    var(--c-secondary) 20vh,
+    var(--c-secondary) 40vh,
+    var(--c-tertiary) 40vh,
+    var(--c-tertiary) 60vh,
+    var(--c-quaternary) 60vh,
+    var(--c-quaternary) 80vh,
+    var(--c-quinary) 80vh,
+    var(--c-quinary) 100vh);
   background-repeat: no-repeat;
   background-size: var(--l-unit) 100%;
+  box-sizing: border-box;
   height: 100vh;
   overflow: hidden;
+  padding-left: var(--l-unit);
   width: 100vw;
 }
 
 body::before {
   display: block;
+  color: var(--c-quinary);
   font-size: var(--l-unit);
+  opacity: .25;
   position: fixed;
   right: 1.5vw;
   top: 1.5vw;
-  color: var(--c-quinary);
 }
 
 body:lang(nl)::before {
@@ -51,7 +55,9 @@ strong {
 }
 
 ul {
+  --offset: 1.5em;
   list-style: none;
+  padding-left: var(--offset);
 }
 
 ul li::before {
@@ -59,6 +65,10 @@ ul li::before {
   color: var(--c-secondary);
   font-weight: bold;
   display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+  width: var(--offset);
+  margin-left: calc(var(--offset) * -1);
+}
+
+li+li {
+  padding-top: .5em;
 }

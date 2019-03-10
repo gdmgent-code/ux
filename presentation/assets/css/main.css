@@ -21,9 +21,13 @@
 section nav {
   display: flex;
   flex-direction: column;
-  left: calc(var(--l-unit) * 1.5);
+  left: calc(var(--l-unit) * 0.5);
   position: absolute;
   top: 0;
+}
+
+nav {
+  font-size: calc(var(--l-unit) * 1.2);
 }
 
 nav a {
@@ -31,13 +35,17 @@ nav a {
   opacity: .25;
 }
 
+section {
+  min-height: 100vh;
+}
+
 section>section {
-  --padding-x: calc((100vw - 100vmin) / 2);
+  --padding-x: calc((100vw - (100vh * 4 / 3)) / 2);
   background-color: var(--colour-primary-base);
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 10vmin auto 10vmin;
+  grid-template-rows: 10vh auto 10vh;
   min-height: 100vh;
   padding: 5% var(--padding-x);
   position: relative;
@@ -80,14 +88,12 @@ section:target~section {
 
 .o-presentation {}
 
-#slide-001 {
-  /* border: 1px solid red; */
-}
-
 #slide-002 {
-  /* border: 1px solid green; */
+  background-color: red;
 }
-
 #slide-003 {
-  /* border: 1px solid blue; */
+  background-color: green;
+}
+#slide-004 {
+  background-color: blue;
 }
