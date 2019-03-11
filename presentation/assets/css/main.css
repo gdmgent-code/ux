@@ -2,11 +2,18 @@
 @import 'variables.css';
 @import 'base.css';
 
+.academic-year:lang(en)::before {
+  content: 'Academic Year ';
+}
+.academic-year:lang(nl)::before {
+  content: 'Academiejaar ';
+}
+
 .nav-main {
   --margin: 1rem;
-  position: fixed;
-  left: calc(var(--l-unit) * 1.5);
   bottom: 0;
+  left: calc(var(--l-unit) * 1.5);
+  position: fixed;
   z-index: 1;
 }
 

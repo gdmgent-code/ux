@@ -23,7 +23,7 @@
    * Layout
    */
   --l-gutter: 1rem;
-  --l-unit: calc(1vw + 1vh);
+  --l-unit: calc((1vw + 1vh) / 2);
 
   /**
    * Typography

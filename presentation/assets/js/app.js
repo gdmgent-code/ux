@@ -1,7 +1,7 @@
 window.onload = function() {
-    slides()
+    presentation()
 }
 
-function slides() {
-    console.log('slides')
+function presentation() {
+    console.log('Presentation')
 }
