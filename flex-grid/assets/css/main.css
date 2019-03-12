@@ -1,6 +1,6 @@
 @import url('variables.css');
 @import url('base.css');
-@import url('components/grid.css');
+@import url('components/flex-grid.css');
 @import url('debug.css');
 
 @media (max-width: 575.99999px) {
