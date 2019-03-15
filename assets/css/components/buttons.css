@@ -1,0 +1,12 @@
+.a-button {
+  --c-primary: var(--c-neutral-400);
+  --c-accent: var(--c-accent-b-400);
+  background-color: var(--c-primary);
+  color: var(--c-accent);
+  border: none;
+  padding: .5rem .75rem;
+}
+.a-button:hover {
+  background-color: var(--c-accent);
+  color:  var(--c-primary);
+}
