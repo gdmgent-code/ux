@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@1.0.0-beta.2/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
     <title>Test</title>
     <style>
+        @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+        :root {
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+        
         .credit-card {
 
         }
@@ -17,23 +22,23 @@
 
 <body>
     <div class="container mx-auto p-1">
-        <h1 class="rounded text-blue-lighter p-3 bg-blue shadow-lg">Olivier Parent</h1>
-        <form action="https://httpbin.org/post" method="POST" class="bg-red p-5 mt-2 hover:bg-green">
+        <h1 class="rounded text-blue-500 p-3 bg-blue-600 shadow-lg">Olivier Parent</h1>
+        <form action="https://httpbin.org/post" method="POST" class="bg-red-600 p-5 mt-2 hover:bg-green-600">
             <div class="row text-white">
                 <input type="text" name="username" placeholder="gebruikersnaam" class="rounded p-2">
                 <i class="fas fa-code"></i>
             </div>
-            <button type="submit" class="bg-blue mt-1 p-3 hover:bg-pink rounded">Verzenden</button>
+            <button type="submit" class="bg-blue-600 mt-1 p-3 hover:bg-pink-600 rounded">Verzenden</button>
         </form>
-        <form action="https://httpbin.org/get" method="GET" class="bg-red p-5 mt-2 hover:bg-green">
+        <form action="https://httpbin.org/get" method="GET" class="bg-red-600 p-5 mt-2 hover:bg-green-600">
             <div class="row text-white">
                 <input type="text" name="username" placeholder="gebruikersnaam" class="rounded p-2">
                 <i class="fas fa-code"></i>
             </div>
-            <button type="submit" class="bg-blue mt-1 p-3 hover:bg-pink rounded">Verzenden</button>
+            <button type="submit" class="bg-blue-600 mt-1 p-3 hover:bg-pink-600 rounded">Verzenden</button>
         </form>
     </div>
-    <div class="credit-card bg-grey p-3">
+    <div class="credit-card bg-gray-600 p-3">
         <img src="" alt="">
         ArteCredit
         <form action="">
