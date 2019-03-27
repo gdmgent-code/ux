@@ -5,8 +5,21 @@
   color: var(--c-accent);
   border: none;
   padding: .5rem .75rem;
+  border-radius: .25rem;
 }
+
 .a-button:hover {
   background-color: var(--c-accent);
   color:  var(--c-primary);
+}
+:focus {
+  box-shadow: 0 0 0 .25rem var(--c-neutral-700);
+}
+
+:invalid {
+  box-shadow: 0 0 0 .25rem var(--c-accent-b-400);
+}
+
+:focus:invalid {
+  box-shadow: 0 0 0 .25rem var(--c-accent-b-700);
 }

@@ -15,11 +15,18 @@
         </div>
         <div class="row">
             <form action="#" method="POST" class="o-loginForm">
-                <label for="user-email" class="m-formElement__label">Email address</label>
-                <input id="user-email" class="m-formElement__field" name="user[email]" placeholder="jane.doe@domain.extension" type="email">
-                <label for="user-password">Password</label>
-                <input type="password" name="user[password]" id="user-password" placeholder="your unique long password">
-                <input type="submit" value="Login" class="a-button">
+                <div class="m-formGroup">
+                    <label for="user-email" class="a-label">Email address</label>
+                    <input id="user-email" class="a-input" name="user[email]" placeholder="jane.doe@domain.extension"
+                        type="email">
+                </div>
+                <div class="m-formGroup">
+                    <label for="user-password">Password</label>
+                    <input id="user-password" class="a-input" name="user[password]" placeholder="your unique long password" type="password">
+                </div>
+                <div class="m-formGroup">
+                    <input type="submit" value="Login" class="a-button">
+                </div>
             </form>
         </div>
     </div>

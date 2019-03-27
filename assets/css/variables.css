@@ -8,7 +8,6 @@
   --c-ahs-blauw: hsl(190, 100%, 40%);
   --c-ahs-fuchsia: hsl(325, 100%, 40%);
   --c-ahs-grijs-donker: hsl(0, 0%, 47%);
-  --c-ahs-grijs-donker-alpha: hsla(0, 0%, 47%, .2);
   --c-ahs-grijs-licht: hsl(0, 0%, 87%);
   --c-ahs-grijs-midden: hsl(0, 0%, 67%);
   --c-ahs-groen: hsl(65, 100%, 40%);
@@ -23,6 +22,7 @@
   --c-secondary-400: var(--c-ahs-groen);
   --c-accent-a-400: var(--c-ahs-blauw);
   --c-accent-b-400: var(--c-ahs-fuchsia);
+  --c-accent-b-700: hsl(325, 100%, 20%);;
 
   /**
    * Layout
