@@ -13,8 +13,8 @@
 <body>
     <div class="container">
         <form class="o-paymentCardForm" action="https://httpbin.org/post" method="POST">
-            <h1>Kredietkaart toevoegen</h1>
-            <p>Vul je kredietkaartgegevens in, om een kredietkaart toe te voegen aan je account.</p>
+            <h1>Betaalkaart toevoegen</h1>
+            <p>Vul je betaalkaartgegevens in, om een betaalkaart toe te voegen aan je account.</p>
             <div class="o-paymentCard">
                 <div class="o-paymentCard__brand">
                     <i class="o-paymentCard__icon fab fa-cc-mastercard"></i>
@@ -28,15 +28,15 @@
                 </div>
                 <div class="o-paymentCard__details">
                     <div class="m-formControl">
-                        <label class="a-label -emboss" for="issue">No</label>
+                        <label class="o-paymentCard__labelCcIssue a-label -emboss" for="issue">No</label>
                         <input class="o-paymentCard__inputCcIssue a-input -emboss" type="text" maxlength="1" placeholder="0" required id="issue" name="issue" data-cc-number>
                     </div>
                     <div class="m-formControl">
                         <label class="a-label" for="cc-exp-month">Geldig tot en met</label>
                         <span class="a-label -emboss">
-                            <input class="a-input -emboss" type="text" maxlength="2" placeholder="MM" required id="cc-exp-month"
+                            <input class="a-input -emboss" type="text" maxlength="2" pattern="^0[1-9]|1[0-2]$" placeholder="MM" required id="cc-exp-month"
                                 name="cc-exp-month" autocomplete="cc-exp-month" data-cc-number>/<input class="a-input -emboss" type="text"
-                                maxlength="2" placeholder="YY" required name="cc-exp-year" autocomplete="cc-exp-year" data-cc-number>
+                                maxlength="2" placeholder="YY" pattern="^[0-9]{2}$" required name="cc-exp-year" autocomplete="cc-exp-year" data-cc-number>
                         </span>
                     </div>
                 </div>
