@@ -6,9 +6,109 @@
   max-width: 30rem;
 }
 
-.credit-card {
+/** Atoms */
+
+.a-button {
+  cursor: pointer;
+}
+
+.a-button.-submit {
+  --color: var(--c-primary-400);
+  background-color: var(--color);
+  border-radius: .25em;
+  border: 2px solid var(--color);
+  bottom: 1rem;
+  padding: .5em 1em;
+  right: 1.5rem;
+}
+
+.a-button.-submit:hover {
+  background-color: transparent;
+  color: var(--color);
+}
+
+.a-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--c-accent-b-400);
+  box-sizing: border-box;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  padding: 2px 5px 0;
+  text-transform: uppercase;
+  width: 100%;
+  outline: none;
+}
+
+.a-input:focus,
+.a-input:focus:valid {
+  border-bottom-color: var(--c-accent-a-700);
+}
+
+.a-input:required {
+  border: none;
+  border-bottom-color: var(--c-accent-b-400);
+}
+
+.a-input:invalid {
+  border-bottom-color: var(--c-accent-b-400);
+}
+
+.a-input:valid {
+  border-bottom-color: var(--c-accent-a-400);
+}
+
+.a-input:focus:invalid {
+  border-bottom-color: var(--c-accent-b-700);
+}
+
+.a-label {
+  font-family: var(--t-primary);
+  font-size: .75rem;
+  font-weight: bold;
+  padding-top: .5rem;
+  width: 100%;
+}
+
+.a-input.-emboss,
+.a-label.-emboss {
+  --c-embossed: 190;
+  --c-embossed-300: hsl(var(--c-embossed), 100%, 90%);
+  --c-embossed-400: hsl(var(--c-embossed), 100%, 60%);
+  --c-embossed-600: hsl(var(--c-embossed), 100%, 40%);
+  --c-embossed-700: hsl(var(--c-embossed), 100%, 30%);
+  --c-embossed-900: hsl(var(--c-embossed), 100%, 10%);
+  color: rgba(0, 0, 0, .75);
+  font-family: var(--t-monospace);
+  text-shadow:
+    0 0 1px #FFF,
+    -2px -2px 4px var(--c-embossed-300),
+    -1px 0 1px var(--c-embossed-600),
+    -1px -1px 1px var(--c-embossed-400),
+    2px 2px 2px var(--c-embossed-600),
+    1px 1px 1px var(--c-embossed-900);
+}
+
+.a-input[maxlength="1"] {
+  text-align: center;
+  width: 1.25em;
+}
+
+.a-input[maxlength="2"] {
+  text-align: center;
+  width: 2em;
+}
+
+/** Molecules */
+.m-formControl {
+  margin: .25em 0;
+}
+
+/** Organisms */
+
+.o-paymentCard {
   --c-plastic: #888;
-  background-color: var(--c-tertiary);
+  background-color: var(--c-accent-a-400);
   border-radius: .8125rem;
   box-shadow:
     1px 1px 1px var(--c-plastic),
@@ -20,119 +120,54 @@
   width: 19rem;
 }
 
-.credit-card.credit-card--back {
-  background: var(--c-quinary) 0 1em repeat-x url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100" height="50"><polygon points="0,0 100,0 100,50 0,50" style="fill:hsl(20, 85%, 10%)" /></svg>');
+.o-paymentCard.-back {
+  --c-stripe: hsl(20, 85%, 10%);
+  background-color: var(--c-neutral-400);
+  background-image: linear-gradient(to bottom, transparent 1em, var(--c-stripe) 1em, var(--c-stripe) 4em, transparent 4em);
 }
 
-.credit-card input {
-  background-color: transparent;
-  border-bottom: 2px solid var(--c-tertiary);
-  border: none;
-  font-size: 1rem;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-.credit-card input:invalid {
-  border: none;
-  border-bottom: 2px solid var(--c-quaternary);
-}
-
-.credit-card__cc-cvc {
-  margin-top: 3em;
-  margin-right: 4.5em;
-}
-
-.credit-card__cc-cvc,
-.credit-card__cc-cvc input {
-  text-align: right;
-}
-
-.credit-card__details {
-  display: flex;
-  justify-content: space-between;
-  padding-top: .5rem;
-}
-
-.credit-card__issue input {
-  width: 1rem;
-}
-
-.credit-card__cc-exp input {
-  width: 1.5rem;
-}
-
-.credit-card label {
-  color: var(--c-primary-darker);
-  font-family: var(--font-primary);
-  font-size: .75rem;
-  font-weight: bold;
-  padding-top: .5rem;
-  width: 100%;
-}
-
-.credit-card__cc-number input {
-  font-size: 1.75rem;
-}
-
-.credit-card__cc-number label,
-.credit-card__cc-name label {
-  display: block;
-  width: 100%;
-}
-
-.credit-card__issue label {
-  font-size: inherit;
-}
-
-.credit-card__logos {
+.o-paymentCard__brand {
+  color: var(--c-accent-a-700);
   display: flex;
   font-size: 2em;
   justify-content: space-between;
 }
-
-.credit-card__logos .fab {
+.o-paymentCard__brand.-back {
+  margin-top: 1.5rem;
+  opacity: .25;
+}
+.o-paymentCard__icon {
   font-size: 1.5em;
 }
 
-.form-credit-card {
+.o-paymentCardForm {
   position: relative;
   background-color: #EEE;
   padding: 1rem;
 }
 
-.form-credit-card__btn-send {
-  background-color: var(--c-secondary);
-  border-radius: .25em;
-  border: 2px solid var(--c-secondary);
-  bottom: 1rem;
-  padding: .5em 1em;
-  right: 1.5rem;
+.o-paymentCard__formControlCcCvc {
+  margin-right: 4.5em;
+  margin-top: 3em;
 }
 
-.form-credit-card__btn-send:hover {
-  background-color: transparent;
-  color: var(--c-secondary);
-  cursor: pointer;
+.o-paymentCard__formControlCcCvc,
+.o-paymentCard__inputCcCvc {
+  text-align: right;
 }
 
-label.text-emboss,
-.text-emboss {
-  --c-embossed: 190;
-  --c-embossed-lighter: hsl(var(--c-embossed), 100%, 90%);
-  --c-embossed-base: hsl(var(--c-embossed), 100%, 60%);
-  --c-embossed-dark: hsl(var(--c-embossed), 100%, 40%);
-  --c-embossed-darker: hsl(var(--c-embossed), 100%, 30%);
-  --c-embossed-darkest: hsl(var(--c-embossed), 100%, 10%);
-  color: rgba(0, 0, 0, .75);
-  font-family: var(--t-monospace);
-  font-size: 1.25rem;
-  text-shadow:
-    0 0 1px #FFF,
-    -2px -2px 4px var(--c-embossed-lighter),
-    -1px 0 1px var(--c-embossed-darker),
-    -1px -1px 1px var(--c-embossed-base),
-    2px 2px 2px var(--c-embossed-darker),
-    1px 1px 1px var(--c-embossed-darkest);
+.o-paymentCard__inputCcCvc {
+  background-color: var(--c-neutral-100);
+  padding: .5em;
+  font-style: italic;
+}
+
+.o-paymentCard__details {
+  display: flex;
+  justify-content: space-between;
+  padding-top: .5rem;
+}
+
+.o-paymentCard__inputCcNumber {
+  font-size: 1.625rem;
 }

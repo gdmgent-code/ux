@@ -5,20 +5,17 @@
   /**
    * Colour palette
    */
-  --c-ahs-blauw: hsl(190, 100%, 40%);
-  --c-ahs-fuchsia: hsl(325, 100%, 40%);
-  --c-ahs-grijs-donker:hsl(0, 0%, 47%);
-  --c-ahs-grijs-donker-alpha:hsla(0, 0%, 47%, .2);
-  --c-ahs-grijs-licht: hsl(0, 0%, 87%);
-  --c-ahs-grijs-midden: hsl(0, 0%, 67%);
-  --c-ahs-groen: hsl(65, 100%, 40%);
-  --c-ahs-oranje: hsl(39, 100%, 47%);
-
-  --c-primary: var(--c-ahs-oranje);
-  --c-secondary: var(--c-ahs-groen);
-  --c-tertiary: var(--c-ahs-blauw);
-  --c-quaternary: var(--c-ahs-fuchsia);
-  --c-quinary: var(--c-ahs-grijs-licht);
+  --c-neutral-100: hsl(0, 0%, 87%);       /* AHS lichtgrijs */
+  --c-neutral-400: hsl(0, 0%, 67%);       /* AHS middengrijs */
+  --c-neutral-700: hsl(0, 0%, 47%);       /* AHS donkergrijs */
+  --c-primary-400: hsl(39, 100%, 47%);    /* AHS oranje */
+  --c-primary-700: hsl(39, 100%, 27%);
+  --c-secondary-400: hsl(65, 100%, 40%);  /* AHS groen */
+  --c-secondary-700: hsl(65, 100%, 20%);
+  --c-accent-a-400: hsl(190, 100%, 40%);  /* AHS blauw */
+  --c-accent-a-700: hsl(190, 100%, 20%);
+  --c-accent-b-400: hsl(325, 100%, 40%);  /* AHS fuchsia */
+  --c-accent-b-700: hsl(325, 100%, 20%);
 
   /**
    * Typography
