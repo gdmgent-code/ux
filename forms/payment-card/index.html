@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kredietkaart &ndash; Formulieren</title>
+    <title>Betaalkaart &ndash; Formulieren</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="assets/js/app.js"></script>
@@ -49,7 +49,7 @@
             <div class="o-paymentCard -back">
                 <div class="o-paymentCard__formControlCcCvc m-formControl">
                     <label class="a-label" for="cc-cvc"><abbr lang="en" title="Card Verification Code">CVC</abbr></label>
-                    <input class="o-paymentCard__inputCcCvc a-input" type="text" maxlength="3" placeholder="000" required id="cc-cvc" name="cc-cvc" autocomplete="cc-cvc" data-cc-number>
+                    <input class="o-paymentCard__inputCcCvc a-input" type="text" maxlength="3" pattern="^[0-9]{3}$" placeholder="000" required id="cc-cvc" name="cc-cvc" autocomplete="cc-cvc" data-cc-number>
                 </div>
                 <div class="o-paymentCard__brand -back">
                     <i class="o-paymentCard__icon fab fa-cc-mastercard"></i>
