@@ -1,0 +1,107 @@
+section nav {
+  display: flex;
+  flex-direction: column;
+  left: calc(var(--l-unit) * 0.5);
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  font-size: calc(var(--l-unit) * 1.2);
+}
+
+nav a {
+  color: var(--c-neutral-400);
+  opacity: .25;
+}
+
+section {
+  min-height: 100vh;
+}
+
+section>section {
+  --padding-x: calc((100vw - (100vh * 4 / 3)) / 2);
+  background-color: white;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 10vh auto 10vh;
+  padding: 5% var(--padding-x);
+  position: relative;
+  /* transform-origin: 0 0;
+  transition: transform 1s, opacity 0.8s; */
+  width: 100%;
+}
+
+section>section>:not(header):not(footer) {
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+section:first>section:first {
+  z-index: 0;
+}
+
+section>section header,
+section>section footer {
+  grid-column-end: 13;
+  grid-column-start: 1;
+}
+
+section>section footer {
+  grid-row-end: 4;
+  grid-row-start: 3;
+}
+
+section:target {
+  /* z-index: 1; */
+}
+
+section:target~section {
+  opacity: 0;
+}
+
+.a-academicYear:lang(en)::before {
+  content: 'Academic Year ';
+}
+
+.a-academicYear:lang(nl)::before {
+  content: 'Academiejaar ';
+}
+
+.o-mainNav {
+  --margin: 1rem;
+  bottom: 0;
+  left: calc(var(--l-unit) * 1.5);
+  position: fixed;
+  z-index: 1;
+}
+
+.p-slide h1 {
+  color: var(--c-accent-a-400);
+}
+
+.p-slide h2 {
+  color: var(--c-primary-400);
+}
+
+.p-slide.-title {
+  text-align: center;
+}
+
+.p-slide.-sectionHead {}
+
+
+.o-presentation {}
+
+#slide-002 {
+  background-color: red;
+}
+
+#slide-003 {
+  background-color: green;
+}
+
+#slide-004 {
+  background-color: blue;
+}

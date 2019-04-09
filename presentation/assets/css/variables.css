@@ -13,11 +13,13 @@
   --c-ahs-groen: hsl(65, 100%, 40%);
   --c-ahs-oranje: hsl(39, 100%, 47%);
 
-  --c-primary: var(--c-ahs-oranje);
-  --c-secondary: var(--c-ahs-groen);
-  --c-tertiary: var(--c-ahs-blauw);
-  --c-quaternary: var(--c-ahs-fuchsia);
-  --c-quinary: var(--c-ahs-grijs-midden);
+  --c-neutral-100: var(--c-ahs-grijs-licht);
+  --c-neutral-400: var(--c-ahs-grijs-midden);
+  --c-neutral-700: var(--c-ahs-grijs-donker);
+  --c-primary-400: var(--c-ahs-oranje);
+  --c-secondary-400: var(--c-ahs-groen);
+  --c-accent-a-400: var(--c-ahs-blauw);
+  --c-accent-b-400: var(--c-ahs-fuchsia);
 
   /**
    * Layout

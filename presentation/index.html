@@ -6,13 +6,19 @@
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentation</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://necolas.github.io">
+    <link rel="dns-prefetch" href="https://use.fontawesome.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/plugins/line-numbers/prism-line-numbers.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism-okaidia.min.css">
 </head>
 
 <body>
-    <nav class="nav-main">
+    <nav class="o-mainNav">
         <a href=""><i class="fas fa-angle-up"></i></a>
         <a href=""><i class="fas fa-angle-down"></i></a>
         <a href=""><i class="fas fa-angle-double-left"></i></a>
@@ -20,11 +26,11 @@
     </nav>
     <main>
         <section>
-            <section id="slide-title" class="slide -title">
+            <section id="slide-title" class="p-slide -title">
                 <header >
                     <h1><abbr title="User Experience">UX</abbr></h1>
                     <h2>User Experience</h2>
-                    <h3 class="academic-year">2018-2019</h3>
+                    <h3 class="a-academicYear">2018-2019</h3>
                 </header>
                 <footer>
                     <nav>
@@ -34,7 +40,7 @@
             </section>
         </section>
         <section>
-            <section id="slide-000" class="slide -sectionhead">
+            <section id="slide-000" class="p-slide -sectionHead">
                 <header>
                     <h2>User Experience</h2>
                     <h1>Section Head</h1>
@@ -46,7 +52,7 @@
                     </nav>
                 </footer>
             </section>
-            <section id="slide-001" class="slide">
+            <section id="slide-001" class="p-slide">
                 <header>
                     <h1>Dit is slide 001</h1>
                 </header>
@@ -67,7 +73,7 @@
                 </footer>
             </section>
 
-            <section id="slide-002" class="slide">
+            <section id="slide-002" class="p-slide">
                 <header>
                     <h1>Dit is slide 002</h1>
                 </header>
@@ -88,7 +94,7 @@
             </section>
         </section>
         <section>
-            <section id="slide-003" class="slide">
+            <section id="slide-003" class="p-slide">
                 <h1>Slide 3</h1>
                 <div>
                     <ol>
@@ -113,7 +119,7 @@
         </section>
 
         <section>
-            <section id="slide-004" class="slide">
+            <section id="slide-004" class="p-slide">
                 <h1>Slide 4</h1>
                 <div>
                     
@@ -126,8 +132,43 @@
                 </footer>
             </section>
 
-            <section id="slide-005" class="slide">
+            <section id="slide-005" class="p-slide">
                 <h1>Slide 5</h1>
+                <footer>
+                    <nav>
+                        <a href="#slide-004"><i class="fas fa-angle-up"></i></a>
+                        <a href="#slide-006"><i class="fas fa-angle-down"></i></a>
+                    </nav>
+                </footer>
+            </section>
+
+            <section id="slide-006" class="p-slide">
+                <h1>Slide 6</h1>
+                <div>
+                    <pre class="line-numbers" data-line="5-7,9-10"><code class="language-css">
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom,
+        var(--c-primary-400) 0,
+        var(--c-primary-400) 20vh,
+        var(--c-secondary-400) 20vh,
+        var(--c-secondary-400) 40vh,
+        var(--c-accent-a-400) 40vh,
+        var(--c-accent-a-400) 60vh,
+        var(--c-accent-b-400) 60vh,
+        var(--c-accent-b-400) 80vh,
+        var(--c-neutral-400) 80vh,
+        var(--c-neutral-400) 100vh);
+    background-repeat: no-repeat;
+    background-size: var(--l-unit) 100%;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+    padding-left: var(--l-unit);
+    width: 100vw;
+}
+                    </code></pre>
+                </div>
                 <footer>
                     <nav>
                         <a href="#slide-004"><i class="fas fa-angle-up"></i></a>
@@ -137,6 +178,9 @@
             </section>
         </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    
 </body>
 
 </html>
